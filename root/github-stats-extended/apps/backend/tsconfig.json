@@ -1,0 +1,13 @@
+{
+  "extends": ["../../tsconfig.base.json"],
+  "include": [
+    "src",
+    "vitest.config.ts",
+    "vitest.config.bench.ts",
+    "vitest.config.e2e.ts"
+  ],
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext"
+  }
+}
