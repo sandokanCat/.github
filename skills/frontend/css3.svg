@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    viewBox="0 0 78 28"
+    preserveAspectRatio="xMidYMid meet"
+    role="img"
+    aria-label="CSS3"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
+
+    <title>CSS3</title>
+    
+    <rect width="100%" height="100%" fill="#1572b6" />
+
+    <g fill="#fff">
+        <g transform="translate(3, 5) scale(0.037)">
+            <path d="M72 460L30 0h451l-41 460-184 52" />
+            <path transform="translate(1)" 
+                fill="#1572b6"
+                d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382" />
+            <path transform="translate(-1)"
+                fill="#1572b6"
+                d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z" />
+        </g>
+
+        <text
+            x="49" y="20.5"
+            font-weight="bold"
+            text-anchor="middle"
+            font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+            text-rendering="geometricPrecision"
+            font-size="18">
+            CSS3
+        </text>
+    </g>
+</svg>

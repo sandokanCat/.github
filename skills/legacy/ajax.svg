@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    viewBox="0 0 76 28"
+    preserveAspectRatio="xMidYMid meet"
+    role="img"
+    aria-label="AJAX"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
+    
+    <title>AJAX</title>
+
+    <rect width="100%" height="100%" fill="#1E5AA8" />
+
+    <g fill="#fff">
+        <g transform="translate(-3, -6.5) scale(0.080)">
+            <path d="M229.18,203.38l-44.34,43.64l15.29,13.89l14.45-14.59h1.68v83.35
+                c0,10.52-8.56,19.08-19.08,19.08h-15.15c-10.52,0-19.08-8.56-19.08-19.08v-8.84h-29.47v11.08c0,19.08,15.43,34.52,34.52,34.52
+                h39.29c19.08,0,34.52-15.43,34.52-34.52v-85.45h1.12l16.84,14.45l13.33-13.89L229.18,203.38L229.18,203.38z" />
+            <path d="M147.66,311.7L192,268.07l-15.29-13.89l-14.45,14.59h-1.68v-83.35
+                c0-10.52,8.56-19.08,19.08-19.08h15.15c10.52,0,19.08,8.56,19.08,19.08v8.84h29.47v-11.08c0-19.08-15.43-34.52-34.52-34.52h-39.29
+                c-19.08,0-34.52,15.43-34.52,34.52v85.45h-1.12l-16.84-14.45l-13.33,13.89L147.66,311.7L147.66,311.7z" />
+        </g>
+        
+        <text x="46" y="20.5"
+            font-weight="bold"
+            text-anchor="middle"
+            font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+            text-rendering="geometricPrecision"
+            font-size="18">
+            AJAX
+        </text>
+    </g>
+</svg>
