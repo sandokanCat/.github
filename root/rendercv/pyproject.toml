@@ -88,9 +88,9 @@ rendercv = "rendercv.cli.entry_point:entry_point"
 # Virtual Environment Dependencies:
 [dependency-groups]
 dev = [
-  "black>=26.1.0",  # Format the code
+  "black>=26.3.1",  # Format the code
   "prek>=0.3.1",  # Run checks before committing (pre-commit alternative)
-  "pytest>=9.0.2",  # Run tests
+  "pytest>=9.0.3",  # Run tests
   "pytest-cov>=7.0.0",  # Coverage plugin for pytest with xdist support
   "pytest-xdist>=3.8.0",  # Run tests in parallel
   "ruff>=0.15.0",  # Lint and format the code
@@ -104,13 +104,13 @@ docs = [
   "mkdocs-gen-files>=0.6.0",  # Dynamic page generation for API reference
   "mkdocs-literate-nav>=0.6.2",  # Dynamic navigation for API reference
   "mkdocs-macros-plugin>=1.5.0",  # Dynamic content in docs
-  "mkdocs-material>=9.7.1",
+  "mkdocs-material>=9.7.7",
   "mkdocstrings[python]>=1.0.2",  # Build reference docs from docstrings
 ]
 update-entry-figures = [
   "PyMuPDF==1.26.5",  # Convert PDF files to images
   "pdfCropMargins==2.2.1",  # Generate entry figures for documentation
-  "pillow==10.4.0",  # Lock dependency of pdfCropMargins
+  "pillow==12.3.0",  # Lock dependency of pdfCropMargins
 ]
 
 # Tools Settings:
