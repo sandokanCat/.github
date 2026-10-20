@@ -435,6 +435,8 @@
 
 ## Existing GitHub and documentation configuration
 
+- [sidebars.js](./sidebars.js) – Configuración de la navegación lateral en Docusaurus.
+
 - [Docusaurus configuration](./docusaurus.config.js) – Configuration for a Docusaurus documentation site.
 - [Issue template configuration](./.github/ISSUE_TEMPLATE/config.yml) – GitHub issue template chooser and contact links.
 - [Bug report template](./.github/ISSUE_TEMPLATE/bug_report.yml) – Structured bug reports.
