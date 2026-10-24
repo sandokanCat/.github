@@ -1,5 +1,6 @@
 {
-    "chat.useAgentsMdFile": true
+    "chat.useAgentsMdFile": true,
+    "chat.includeReferencedInstructions": true,
 
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
