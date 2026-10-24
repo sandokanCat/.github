@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+
+type: software
+title: "sandokanCat/.github"
+authors:
+  - given-names: Gonzalo
+    family-names: "Cabezas Núñez"
+    affiliation: sandokan.cat
+    email: dev@sandokan.cat
+    orcid: "https://orcid.org/0009-0006-5181-5463"
+
+version: 2.1.0
+date-released: "2026-10-24"
+commit: ""
+
+abstract: ""
+keywords:
+  - 
+
+url: "https://sandokan.cat"
+repository-code: "https://github.com/sandokanCat/.github"
+license-url: "https://github.com/sandokanCat/.github/blob/main/LICENSE"
