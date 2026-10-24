@@ -1,0 +1,1 @@
+Read and follow the repository-root AGENTS.md as the single source of project-wide instructions. Do not duplicate rules here. If your client cannot resolve this reference automatically, open AGENTS.md before making changes.

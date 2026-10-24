@@ -7,19 +7,21 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.
 ## [Unreleased]
 
 ### Added
-- Expanded the AI instruction architecture survey to include Amp, Cursor, Zed, Cline, Roo Code, JetBrains Junie CLI, Kiro, and additional editor/CLI harnesses, with official documentation and guidance on when adapters are unnecessary.
+- Expanded the AI template with historical and current compatibility entry points for Gemini, Cursor, Windsurf, Zed, Cline, Roo Code, Qwen Code, Kiro, Junie, Goose, Augment, Amazon Q, Continue, Trae, OpenHands, Devin, Warp, Replit, and generic/legacy clients.
+- Added `docs/ai/AGENT_ARCHITECTURE.md` as a detailed compatibility matrix covering CLI, IDE/local, hosted/external, API-harness, nested-directory, and historical-version scenarios.
+- Added alternate common filenames (`AGENT.md`, `CONVENTIONS.md`, `WARP.md`, `replit.md`, `.rules`) for clients that use these conventions.
 
 ### Changed
-- Clarified that Claude Code v2.1.277+ supports native `AGENTS.md` discovery, but an applicable `CLAUDE.md` can take precedence; retained the tiny import bridge for backward compatibility.
-- Documented that Gemini CLI can use `AGENTS.md` through `.gemini/settings.json` without maintaining `GEMINI.md`.
-- Clarified that Copilot's `.github/copilot-instructions.md` is a native natural-language Markdown format, and that support for `AGENTS.md` differs by product surface.
-- Confirmed that Cursor, Zed, Cline, Roo Code, Junie CLI, and Amp have documented `AGENTS.md` support; no redundant native adapter files were added for these clients.
-- Documented why Kiro and other configurable rule systems do not automatically receive the canonical instructions merely because an adapter links to `AGENTS.md`.
+- Kept root `AGENTS.md` as canonical policy while retaining vendor-specific entry points as thin compatibility shims for a reusable template.
+- Added `GEMINI.md` with a native import of `AGENTS.md` for default/older Gemini CLI setups while retaining `.gemini/settings.json` for versions configured to load `AGENTS.md` directly.
+- Added both legacy and modern rule locations for tools whose discovery conventions have changed over time.
+- Documented that textual pointers cannot guarantee host-level context injection, and that every hosted/API/local/CLI surface must be validated independently.
+- Preserved existing Claude plugin settings and Copilot/VS Code configuration while preparing additional native instruction locations.
+- Updated the architecture and changelog to distinguish confirmed native support from version-dependent or unverified compatibility.
 
 ### Previously documented
-- Added a cross-agent instruction architecture reference at `docs/ai/AGENT_ARCHITECTURE.md`, including discovery mechanisms, migration history, official documentation, and validation guidance.
-- Added canonical, stack-neutral coding-agent instructions to root `AGENTS.md`, including an on-demand index for relevant documentation under `docs/`.
-- Recorded the AI instruction setup work from 2026-10-24 that was not previously represented here: [Gemini CLI settings](https://github.com/sandokanCat/.github/commit/ebac9c8d77af3999929ae328d94072b42cc4cb15), [Claude settings](https://github.com/sandokanCat/.github/commit/2f543bba0f7fe96ee130b46f7d58cef213cad712), [Claude import bridge](https://github.com/sandokanCat/.github/commit/f7ed3f6b3bb4464d348878d55d9beec9f7a0de0d), [Copilot adapter](https://github.com/sandokanCat/.github/commit/5e81cbf1ae6cccc2070ac8312bb772acc0070801), [OpenCode adapter](https://github.com/sandokanCat/.github/commit/72f375b05c255c49adca5e1a0a477ac4f0324dcd), and [VS Code settings](https://github.com/sandokanCat/.github/commit/d5708aaeee910d687bf81b5b085e5968dd5cfbdc).
+- Canonical, stack-neutral coding-agent instructions in root `AGENTS.md`, with an on-demand index to relevant documentation under `docs/`.
+- Minimal Claude, Copilot, Gemini, Aider, and VS Code setup and the earlier AI instruction commits; see the repository history for those changes.
 
 ## [2026-10-22]
 
