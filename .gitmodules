@@ -1,0 +1,13 @@
+# ADD EXTERNAL REPO AS SUBMODULE
+# [submodule "external-repo"]
+#    path = route/external-repo
+#    url = https://github.com/external-user/external-repo
+#    branch = master
+#    ignore = dirty
+
+# ADD OWN REPO AS SUBMODULES
+# [submodule "own-repo"]
+#    path = route/own-repo
+#    url = https://github.com/sandokanCat/own-repo
+#    branch = main
+#    ignore = none
