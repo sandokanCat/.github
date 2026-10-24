@@ -4,17 +4,17 @@ This is the repository's catalogued documentation index. The repository is a reu
 
 ## Primary entry points
 
-- [Repository overview](../README.md) — repository purpose and scope.
-- [Canonical agent instructions](../AGENTS.md) — project-wide instructions for coding agents.
-- [AI instruction architecture](./ai/AGENT_ARCHITECTURE.md) — compatibility model, discovery caveats, and adapter policy.
+- [README.md](../README.md) — repository purpose and scope.
+- [AGENTS.md](../AGENTS.md) — project-wide instructions for coding agents.
+- [AGENT_ARCHITECTURE.md](./ai/AGENT_ARCHITECTURE.md) — compatibility model, discovery caveats, and adapter policy.
 - `Contribution guide` — contribution workflow and documentation conventions.
-- [Development summary](../SUMMARY.md) — commit work log grouped by UTC date and logical type.
-- [Changelog](../CHANGELOG.md) — notable changes by release.
-- [Version record](../VERSION.md) — current release or prerelease scope and status.
-- [Decision register](./decisions/DECISIONS.md) — durable team decisions.
-- [Release process](./releases/RELEASE_PROCESS.md) — release preparation and publication.
-- [Tagging conventions](./releases/TAGGING.md) — version tags and immutable release anchors.
-- [Release checklist](./releases/RELEASE_CHECKLIST.md) — final release checks.
+- [SUMMARY.md](../SUMMARY.md) — commit work log grouped by UTC date and logical type.
+- [CHANGELOG.md](../CHANGELOG.md) — notable changes by release.
+- [VERSION.md](../VERSION.md) — current release or prerelease scope and status.
+- [DECISIONS.md](./decisions/DECISIONS.md) — durable team decisions.
+- [RELEASE_PROCESS.md](./releases/RELEASE_PROCESS.md) — release preparation and publication.
+- [TAGGING.md](./releases/TAGGING.md) — version tags and immutable release anchors.
+- [RELEASE_CHECKLIST.md](./releases/RELEASE_CHECKLIST.md) — final release checks.
 
 ## Catalogued documentation
 
@@ -25,7 +25,7 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [PROJECT.md](./identity/PROJECT.md) – Description of the scope, purpose and limitations.
 - [PROJECT_STATUS.md](./identity/PROJECT_STATUS.md) – Current status, roadblocks and maintenance status.
 - [CHANGELOG.md](../CHANGELOG.md) — Curated release changelog following Keep a Changelog.
-- [CHANGES.md](../CHANGES.md) — Deprecated; use the [decision register](./decisions/DECISIONS.md).
+- [CHANGES.md](../CHANGES.md) — Deprecated; use the [DECISIONS.md](./decisions/DECISIONS.md).
 - [RELEASE_NOTES.md](./releases/RELEASE_NOTES.md) – What’s new in a specific version.
 - [ROADMAP.md](./identity/ROADMAP.md) – Planned features and future priorities.
 - [FAQ.md](./identity/FAQ.md) – Frequently asked questions.
@@ -42,10 +42,10 @@ This is the repository's catalogued documentation index. The repository is a reu
 
 ## 2. Community, collaboration and contributions
 
-- `CONTRIBUTING.md` – Explains how to contribute, test and submit changes.
-- `CODE_OF_CONDUCT.md` – Rules of conduct and handling of breaches.
+- [CONTRIBUTING.md](./CONTRIBUTING.md) – Explains how to contribute, test and submit changes.
+- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) – Rules of conduct and handling of breaches.
 - [SUPPORT.md](./SUPPORT.md) – Channels for obtaining support.
-- `SECURITY.md` – Security policy and vulnerability reporting.
+- [SECURITY.md](./SECURITY.md) – Security policy and vulnerability reporting.
 - [GOVERNANCE.md](./GOVERNANCE.md) – Governance and decision-making model.
 - [MAINTAINERS.md](./community/MAINTAINERS.md) – Maintenance leads and their roles.
 - [COMMUNITY.md](./community/COMMUNITY.md) – Resources and guidelines for participating in the community.
@@ -372,7 +372,7 @@ This is the repository's catalogued documentation index. The repository is a reu
 
 ## 16. Site documentation, manuals and documentation generators
 
-- `index.md` – Home page for a documentation section.
+- [index.md](./index.md) – Home page for a documentation section.
 - [mkdocs.yml](../mkdocs.yml) – MkDocs site configuration.
 - [DOCS.md](./documentation/DOCS.md) – Table of contents or overview of the available documentation.
 - [DOCUMENTATION.md](./documentation/DOCUMENTATION.md) – General guide to the project’s documentation.
@@ -450,12 +450,12 @@ This is the repository's catalogued documentation index. The repository is a reu
 
 - [sidebars.js](../sidebars.js) – Configuration of the side navigation in Docusaurus.
 
-- [Docusaurus configuration](../docusaurus.config.js) – Configuration for a Docusaurus documentation site.
-- [Issue template configuration](../.github/ISSUE_TEMPLATE/config.yml) – GitHub issue template selector and contact links.
-- [Bug report template](../.github/ISSUE_TEMPLATE/bug_report.yml) – Structured bug reports.
-- [Feature request template](../.github/ISSUE_TEMPLATE/feature_request.yml) – Structured feature proposals.
-- [Discussion: ideas](../.github/DISCUSSION_TEMPLATE/ideas.yml) – Template for discussions about ideas.
-- [Discussion: Q&A](../.github/DISCUSSION_TEMPLATE/q-a.yml) – Template for questions and answers.
-- [Vulnerability report configuration](../.github/VULNERABILITY_REPORT.yml) – Existing placeholder for vulnerability-reporting configuration.
-- [GitHub funding configuration](../.github/FUNDING.yml) – Sponsor and funding links.
+- [docusaurus.config.js](../docusaurus.config.js) – Configuration for a Docusaurus documentation site.
+- [config.yml](../.github/ISSUE_TEMPLATE/config.yml) – GitHub issue template selector and contact links.
+- [bug_report.yml](../.github/ISSUE_TEMPLATE/bug_report.yml) – Structured bug reports.
+- [feature_request.yml](../.github/ISSUE_TEMPLATE/feature_request.yml) – Structured feature proposals.
+- [ideas.yml](../.github/DISCUSSION_TEMPLATE/ideas.yml) – Template for discussions about ideas.
+- [q-a.yml](../.github/DISCUSSION_TEMPLATE/q-a.yml) – Template for questions and answers.
+- [VULNERABILITY_REPORT.yml](../.github/VULNERABILITY_REPORT.yml) – Existing placeholder for vulnerability-reporting configuration.
+- [FUNDING.yml](../.github/FUNDING.yml) – Sponsor and funding links.
 - [CODEOWNERS](./CODEOWNERS) – Existing code ownership file at a GitHub-supported location.
