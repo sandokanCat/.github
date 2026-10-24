@@ -1,0 +1,1 @@
+Read and follow the repository-root AGENTS.md as the canonical source of project-wide instructions. This legacy filename exists only for Codex setups explicitly configured to use it as a fallback; do not duplicate policy here.

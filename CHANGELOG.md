@@ -9,12 +9,14 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.
 ### Added
 - Expanded the AI template with historical and current compatibility entry points for Gemini, Cursor, Windsurf, Zed, Cline, Roo Code, Qwen Code, Kiro, Junie, Goose, Augment, Amazon Q, Continue, Trae, OpenHands, Devin, Warp, Replit, and generic/legacy clients.
 - Added `docs/ai/AGENT_ARCHITECTURE.md` as a detailed compatibility matrix covering CLI, IDE/local, hosted/external, API-harness, nested-directory, and historical-version scenarios.
-- Added alternate common filenames (`AGENT.md`, `CONVENTIONS.md`, `WARP.md`, `replit.md`, `.rules`) for clients that use these conventions.
+- Added alternate common filenames (`AGENT.md`, `CONVENTIONS.md`, `WARP.md`, `replit.md`, `codex.md`, `.rules`) and additional Antigravity/Crush/agent-rules entry points.
+- Expanded the survey to cover Kilo Code, ZCode Agent, Google Jules, Antigravity, Factory Droid, Kimi Code CLI, Qoder CLI, Grok CLI, Pi, Hermes, and Mastra Code, distinguishing documented native support from provisional reports.
 
 ### Changed
 - Kept root `AGENTS.md` as canonical policy while retaining vendor-specific entry points as thin compatibility shims for a reusable template.
 - Added `GEMINI.md` with a native import of `AGENTS.md` for default/older Gemini CLI setups while retaining `.gemini/settings.json` for versions configured to load `AGENTS.md` directly.
-- Added both legacy and modern rule locations for tools whose discovery conventions have changed over time.
+- Added both legacy and modern rule locations for tools whose discovery conventions have changed over time, including Junie's preferred `.junie/AGENTS.md` location.
+- Prepared a legacy Codex fallback and additional common agent entry points without creating `AGENTS.override.md`, which could unintentionally override canonical policy.
 - Documented that textual pointers cannot guarantee host-level context injection, and that every hosted/API/local/CLI surface must be validated independently.
 - Preserved existing Claude plugin settings and Copilot/VS Code configuration while preparing additional native instruction locations.
 - Updated the architecture and changelog to distinguish confirmed native support from version-dependent or unverified compatibility.

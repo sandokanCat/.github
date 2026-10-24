@@ -19,7 +19,7 @@ Compatibility is version- and surface-dependent. No repository can guarantee tha
 
 | Client/tool family | Prepared path(s) | Mechanism and compatibility notes |
 |---|---|---|
-| OpenAI Codex CLI / IDE integrations | `AGENTS.md`, optional `AGENT.md` fallback | Codex natively discovers `AGENTS.md`; support and precedence can vary by integration/version. |
+| OpenAI Codex CLI / IDE integrations | `AGENTS.md`, `AGENT.md`, optional `codex.md` fallback | Codex natively discovers `AGENTS.md`; `codex.md` is only relevant when explicitly configured as a fallback. |
 | Claude Code | `CLAUDE.md`, `.claude/settings.json` | `CLAUDE.md` imports `@AGENTS.md`. This covers the long-standing native filename; recent Claude Code versions can also discover AGENTS.md, subject to precedence. The existing plugin settings are preserved as a separate mechanism. |
 | Gemini CLI | `GEMINI.md`, `.gemini/settings.json` | `GEMINI.md` imports `@./AGENTS.md` for default/older behavior. Settings select `AGENTS.md` directly on versions supporting `context.fileName`. |
 | GitHub Copilot (GitHub, IDE, CLI surfaces) | `.github/copilot-instructions.md`, `.github/instructions/project.instructions.md` | Repository-wide and path-scoped instruction formats. Support varies by surface; the short natural-language bridge remains for broad compatibility. |
@@ -32,7 +32,16 @@ Compatibility is version- and surface-dependent. No repository can guarantee tha
 | Amp | `AGENTS.md`, optional `AGENT.md` | Native AGENTS.md discovery and historical fallback names documented by Amp. |
 | Cline | `.clinerules`, `.cline/rules/project.md`, `AGENTS.md` | Legacy single-file and modern directory rule formats; AGENTS.md support is available in current versions. |
 | Roo Code | `.roorules`, `.roo/rules/AGENTS.md`, `AGENTS.md` | Legacy and directory rule formats prepared; verify exact enabled rule mode/version. |
-| Kilo Code | `AGENTS.md` | Native AGENTS.md support; may also support its own rule formats depending on version. |
+| Kilo Code | `AGENTS.md`, `AGENT.md` | Native discovery; Kilo documents `AGENT.md` as a fallback and supports legacy `.kilo/rules/` and `.kilocode/rules/` content. No duplicate Kilo rule is needed for general policy. |
+| ZCode Agent | `AGENTS.md` | Native workspace instruction support; it does not expand imports or merge nested AGENTS.md files, so keep essential policy in the root file. |
+| Google Jules | `AGENTS.md` | Repository instructions are supported natively; no separate adapter is needed. |
+| Antigravity | `GEMINI.md`, `AGENTS.md` depending on surface | Keep `GEMINI.md` as the compatibility entry point; Antigravity and Gemini CLI are related products but not interchangeable loaders. |
+| Factory Droid | `AGENTS.md` | Current harnesses support shared AGENTS.md instructions; verify the specific product/runtime before assuming identical behavior. |
+| Kimi Code CLI | `AGENTS.md` | Reported as a native AGENTS.md client in current tooling; verify the actual version and runtime. |
+| Qoder CLI | `AGENTS.md` | Reported as a native AGENTS.md client in current tooling; verify the actual version and runtime. |
+| Grok CLI | `AGENTS.md` | Reported as a native AGENTS.md client in current tooling; verify the actual version and runtime. |
+| Pi coding agent | `AGENTS.md` | Native/shared instruction discovery; external wrappers can alter behavior. |
+| Hermes and Mastra Code | `AGENTS.md` | Emerging clients reported to use AGENTS.md; treat as provisional until confirmed against official release documentation. |
 | JetBrains Junie | `.junie/AGENTS.md`, `AGENTS.md`, `.junie/guidelines.md` | Current AGENTS.md and legacy guidelines paths prepared. Junie CLI's documented discovery order gives `.junie/AGENTS.md` precedence over root AGENTS.md. |
 | Qwen Code | `QWEN.md`, `.qwen/rules/project.md`, `AGENTS.md` | QWEN.md supports legacy/default context; modern rules live under `.qwen/rules/`. A directive to read AGENTS.md is a fallback instruction, not a host-level import guarantee. |
 | Goose | `.goosehints`, `AGENTS.md` | Goose-specific hints file prepared for clients using the legacy native name; verify current project discovery behavior. |
@@ -45,7 +54,7 @@ Compatibility is version- and surface-dependent. No repository can guarantee tha
 | Devin | `.devin/rules/project.md`, `AGENTS.md` | Workspace rule pointer prepared; hosted configuration and context access depend on the Devin environment. |
 | Warp AI | `WARP.md`, `AGENTS.md` | Legacy/common project entry point prepared; verify current Warp Agent discovery. |
 | Replit Agent | `replit.md`, `AGENTS.md` | Compatibility pointer prepared for workflows that read Replit project guidance; do not assume all Replit agent modes load it. |
-| Generic/unknown agents | `AGENTS.md`, `AGENT.md`, `.rules`, `.github/copilot-instructions.md` | Several common filenames improve the odds of discovery, but unknown clients must be explicitly pointed to root AGENTS.md. |
+| Generic/unknown agents | `AGENTS.md`, `AGENT.md`, `.rules`, `.github/copilot-instructions.md`, `CONVENTIONS.md`, `WARP.md`, `replit.md`, `codex.md`, `.agents/rules/project.md`, `.crush/CRUSH.md` | Common filenames improve the odds of discovery, but unknown clients must be explicitly pointed to root AGENTS.md. |
 
 ## Historical and alternate usage modes
 
@@ -82,6 +91,9 @@ When adding an adapter:
 - VS Code custom instructions: https://code.visualstudio.com/docs/agent-customization/custom-instructions
 - Cursor rules: https://cursor.com/docs/rules
 - Zed instructions and supported filenames: https://zed.dev/docs/ai/instructions
+- Kilo Code AGENTS.md: https://github.com/Kilo-Org/kilocode/blob/main/packages/kilo-docs/pages/customize/agents-md.md
+- ZCode Agent instructions: https://zcode.z.ai/en/docs/agents
+- Google Jules: https://jules.google/docs/
 - OpenCode rules: https://docs.opencode.ai/docs/rules/
 - Aider configuration: https://aider.chat/docs/config/aider_conf.html
 - Amp AGENTS.md: https://ampcode.com/docs/customize/agents-md
