@@ -12,12 +12,12 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.
 ## [2026-10-22]
 
 ### Added
-- Added the initial `manifest.json`, VS Code task configuration, and root-level license-exception file.
+- Added the initial `manifest.json` file.
 
 ## [2026-10-21]
 
 ### Added
-- Added the initial `tasks.json` VS Code task configuration and `LICENSE-EXCEPTION` file.
+- Added the initial VS Code task configuration and root-level license-exception file.
 
 ## [2026-10-20]
 
