@@ -6,9 +6,9 @@ This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/)
 
 ## [Unreleased]
 
-## [0.1.0-alpha.1] - 2026-10-24
+## [0.1.0-alpha.1]
 
-Initial public prerelease candidate for the reusable AI coding-agent instruction template. This version is anchored to commit [48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d).
+Prepared prerelease; publication is pending. Once the GitHub prerelease is published, add its publication date to this heading. This version is anchored to commit [48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d).
 
 ### Added
 

@@ -6,7 +6,7 @@ This document defines the minimal release workflow for this repository. See [tag
 
 1. Decide the version using [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html). Use a prerelease identifier such as -alpha.1 while compatibility or scope remains preliminary.
 2. Confirm the intended release commit and inspect its complete diff. The tag must point to that exact commit.
-3. Update CHANGELOG.md with only notable user-facing changes. Keep [Unreleased] at the top and create the version section using YYYY-MM-DD.
+3. Update CHANGELOG.md with only notable user-facing changes. Keep [Unreleased] at the top. A prepared version section may omit its date while publication is pending; add the actual publication date to the version heading after the GitHub Release is published.
 4. Update VERSION.md with the intended version, scope, limitations, and status. Do not claim publication yet.
 5. Verify links, syntax, and the release scope. Follow the [release checklist](./RELEASE_CHECKLIST.md).
 

@@ -13,6 +13,16 @@ This file is the repository's chronological work log. It summarizes work by UTC 
 
 ## 2026-10-24 (UTC)
 
+### Documentation and release governance
+
+Separated the repository's work log, release-facing history, version record, and durable decisions. The documentation catalog and its navigation were then consolidated and refined.
+
+#### [23:13:36 UTC — Refined navigation consistency across the documentation catalog](https://github.com/sandokanCat/.github/commit/b1f92a5059737809760f61fdf5ac75cf4d1e5b2d)
+
+#### [23:13:19 UTC — Consolidated the documentation catalog in the primary index](https://github.com/sandokanCat/.github/commit/f5f10908b0ab05f236ac8518ee8345dd45ccb2e7)
+
+#### [23:11:36 UTC — Established distinct responsibilities for work history, release notes, and decisions](https://github.com/sandokanCat/.github/commit/381002e8abe47c2ad4d5e8d7b89689c4eb3796e3)
+
 ### AI instruction architecture
 
 Established and extended a canonical instruction model with compatibility entry points for different agent products and generations. Compatibility remains client- and version-dependent.
