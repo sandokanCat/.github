@@ -1,0 +1,8 @@
+User-agent: *
+Disallow:
+
+Sitemap: ./sitemaps/sitemap.xml
+Sitemap: ./sitemaps/sitemaps.xml.gz
+Sitemap: ./sitemaps/sitemap.html
+Sitemap: ./ror.xml
+Sitemap: ./sitemaps/urllist.txt
