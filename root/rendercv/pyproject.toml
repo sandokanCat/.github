@@ -88,7 +88,7 @@ rendercv = "rendercv.cli.entry_point:entry_point"
 # Virtual Environment Dependencies:
 [dependency-groups]
 dev = [
-  "black>=26.3.1",  # Format the code
+  "black>=26.10.1",  # Format the code
   "prek>=0.3.1",  # Run checks before committing (pre-commit alternative)
   "pytest>=9.0.3",  # Run tests
   "pytest-cov>=7.0.0",  # Coverage plugin for pytest with xdist support
