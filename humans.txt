@@ -1,0 +1,47 @@
+/* TEAM */
+
+Position: Full Stack Developer
+Name: Gonzalo Cabezas Núñez
+Nickname: sandokan.cat
+Website: https://sandokan.cat
+Email: dev [at] sandokan.cat
+Contact: +34 631306583
+
+
+/* TECH */
+
+* FRONTEND
+Vanilla JS
+HTML5
+CSS3
+
+* BACKEND
+PHP
+Python
+Java
+C/C++
+
+* DATABASE
+SQL
+MariaDB
+
+* DATA
+JSON
+JWT
+XML
+
+* INFRAESTRUCTURE
+Apache
+
+* BLOCKCHAIN
+Solidity
+
+* LEGACY
+AJAX
+XHTML
+JSP
+
+
+/* SEE */
+
+./README.md
