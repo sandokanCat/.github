@@ -11,9 +11,11 @@ Contact: +34 631306583
 /* TECH */
 
 * FRONTEND
+TypeScript
 Vanilla JS
 HTML5
 CSS3
+Angular
 
 * BACKEND
 PHP
