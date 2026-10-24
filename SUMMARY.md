@@ -1,448 +1,296 @@
-# Summary
+# Development summary
 
-## Repository index
+This file is the repository's chronological work log. It summarizes work by UTC date and logical change type; each entry links to its authoritative Git commit. It intentionally avoids duplicating diffs, author metadata, or detailed implementation records. Git history remains the source of truth for those details.
 
-- [README.md](./README.md) – Repository overview and entry point.
-- [SUMMARY.md](./SUMMARY.md) – Categorized index of the catalogued documentation and repository files.
+## Convention
 
-## 1. Identidad, presentación y estado del proyecto
+- Group entries by commit author date in UTC (YYYY-MM-DD), newest first.
+- Within each date, group commits by logical change type; each group starts with a short, high-level summary of that day's work in that area.
+- Within each group, list commits newest first, using 24-hour UTC time (HH:mm:ss UTC). Every commit entry links to GitHub's commit view.
+- Use concise, neutral descriptions rather than copying commit subjects or enumerating file-level changes. The link provides the full traceable record.
+- Add entries for all commits, including maintenance and merge commits. Do not use this file as a substitute for [CHANGELOG.md](./CHANGELOG.md), which records notable changes by release, or [the decision register](./docs/decisions/DECISIONS.md), which records durable decisions.
+- See [CONTRIBUTING.md](./docs/CONTRIBUTING.md) for maintenance rules and [docs/index.md](./docs/index.md) for the documentation entry point.
 
-- [OVERVIEW.md](./docs/identity/OVERVIEW.md) – Visión general del sistema, sus objetivos y componentes.
-- [ABOUT.md](./docs/identity/ABOUT.md) – Información contextual sobre el proyecto.
-- [PROJECT.md](./docs/identity/PROJECT.md) – Descripción del alcance, propósito y límites.
-- [PROJECT_STATUS.md](./docs/identity/PROJECT_STATUS.md) – Estado actual, bloqueos y situación de mantenimiento.
-- [CHANGELOG.md](./CHANGELOG.md) – Historial de cambios por versión.
-- [CHANGES.md](./CHANGES.md) – Alternativa para registrar cambios.
-- [RELEASE_NOTES.md](./docs/releases/RELEASE_NOTES.md) – Novedades de una versión concreta.
-- [ROADMAP.md](./docs/identity/ROADMAP.md) – Funcionalidades previstas y prioridades futuras.
-- [FAQ.md](./docs/identity/FAQ.md) – Preguntas frecuentes.
-- [AUTHORS.md](./AUTHORS.md) – Autores principales.
-- [CONTRIBUTORS.md](./CONTRIBUTORS.md) – Personas que han contribuido al proyecto.
-- [ACKNOWLEDGMENTS.md](./docs/identity/ACKNOWLEDGMENTS.md) – Agradecimientos y atribuciones complementarias.
-- [CITATION.md](./CITATION.md) – Instrucciones para citar el software.
-- [CITATION.cff](./CITATION.cff) – Metadatos estructurados de citación.
-- [LICENSE.md](./LICENSE.md) – Texto o explicación de la licencia.
-- [COPYRIGHT.md](./docs/identity/COPYRIGHT.md) – Avisos y condiciones relacionadas con derechos de autor.
-- [DISCLAIMER.md](./docs/identity/DISCLAIMER.md) – Limitaciones de responsabilidad y advertencias.
-- [NOTICE.md](./NOTICE.md) – Avisos legales o atribuciones de terceros.
-- [VERSION.md](./VERSION.md) – Información sobre la versión actual.
+## 2026-10-24 (UTC)
 
-## 2. Comunidad, colaboración y contribuciones
+### AI instruction architecture
 
-- [CONTRIBUTING.md](./docs/CONTRIBUTING.md) – Explica cómo contribuir, probar y enviar cambios.
-- [CODE_OF_CONDUCT.md](./docs/CODE_OF_CONDUCT.md) – Normas de comportamiento y gestión de incumplimientos.
-- [SUPPORT.md](./docs/SUPPORT.md) – Canales para obtener soporte.
-- [SECURITY.md](./docs/SECURITY.md) – Política de seguridad y notificación de vulnerabilidades.
-- [GOVERNANCE.md](./docs/GOVERNANCE.md) – Modelo de gobierno y toma de decisiones.
-- [MAINTAINERS.md](./docs/community/MAINTAINERS.md) – Responsables del mantenimiento y sus funciones.
-- [COMMUNITY.md](./docs/community/COMMUNITY.md) – Recursos y pautas para participar en la comunidad.
-- [ONBOARDING.md](./docs/development/ONBOARDING.md) – Incorporación de nuevos colaboradores.
-- [COLLABORATION.md](./docs/community/COLLABORATION.md) – Acuerdos y prácticas de colaboración.
-- [MAINTENANCE.md](./docs/community/MAINTENANCE.md) – Tareas periódicas de mantenimiento del proyecto.
-- [FUNDING.md](./docs/community/FUNDING.md) – Explica cómo apoyar económicamente el proyecto.
-- [CODEOWNERS.md](./docs/community/CODEOWNERS.md) – Explicación del sistema de responsables de código.
-- [PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) – Explica o complementa el proceso de solicitudes de cambios.
-- [ISSUE_TEMPLATE.md](./docs/ISSUE_TEMPLATE.md) – Documentación o plantilla general de incidencias.
+Established and extended a canonical instruction model with compatibility entry points for different agent products and generations. Compatibility remains client- and version-dependent.
 
-## 3. Instalación, configuración y primeros pasos
+#### [21:15:14 UTC — Expanded compatibility across nested and legacy entry points](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d)
 
-- [INSTALL.md](./docs/installation/INSTALL.md) – Procedimiento de instalación.
-- [INSTALLATION.md](./docs/installation/INSTALLATION.md) – Guía completa de instalación.
-- [SETUP.md](./docs/installation/SETUP.md) – Preparación inicial del entorno.
-- [GETTING_STARTED.md](./docs/installation/GETTING_STARTED.md) – Primeros pasos para comenzar a utilizar el proyecto.
-- [QUICKSTART.md](./docs/installation/QUICKSTART.md) – Recorrido rápido para obtener un primer resultado.
-- [CONFIGURATION.md](./docs/installation/CONFIGURATION.md) – Opciones de configuración y sus efectos.
-- [CONFIG.md](./docs/installation/CONFIG.md) – Referencia breve de configuración.
-- [ENVIRONMENT.md](./docs/installation/ENVIRONMENT.md) – Requisitos del entorno y variables necesarias.
-- [ENVIRONMENT_VARIABLES.md](./docs/installation/ENVIRONMENT_VARIABLES.md) – Variables de entorno, significado y valores permitidos.
-- [PREREQUISITES.md](./docs/installation/PREREQUISITES.md) – Requisitos previos de software, permisos o hardware.
-- [DEPENDENCIES.md](./docs/installation/DEPENDENCIES.md) – Dependencias y restricciones conocidas.
-- [DEVELOPMENT.md](./docs/development/DEVELOPMENT.md) – Preparación del entorno de desarrollo.
-- [LOCAL_DEVELOPMENT.md](./docs/development/LOCAL_DEVELOPMENT.md) – Flujo de trabajo de desarrollo en local.
-- [FIRST_RUN.md](./docs/installation/FIRST_RUN.md) – Procedimiento de primera ejecución.
-- [BOOTSTRAP.md](./docs/installation/BOOTSTRAP.md) – Inicialización automatizada de un entorno o proyecto.
-- [UPGRADE.md](./docs/installation/UPGRADE.md) – Actualización de una instalación.
-- [UPGRADING.md](./docs/installation/UPGRADING.md) – Procedimientos de actualización, normalmente entre versiones.
-- [UNINSTALL.md](./docs/installation/UNINSTALL.md) – Desinstalación y limpieza.
-- [TROUBLESHOOTING.md](./docs/installation/TROUBLESHOOTING.md) – Diagnóstico de problemas durante la preparación o ejecución.
+#### [21:14:42 UTC — Extended compatibility guidance and adapter coverage](https://github.com/sandokanCat/.github/commit/ea126d034d8ffd509f80f78423d05ffc70fb6dce)
 
-## 4. Construcción, compilación y empaquetado
+#### [21:13:50 UTC — Added historical instruction compatibility coverage](https://github.com/sandokanCat/.github/commit/428da38ad7dcc889ef287d90dd2952a33bf357b3)
 
-- [BUILD.md](./docs/build/BUILD.md) – Instrucciones de compilación.
-- [BUILDING.md](./docs/development/BUILDING.md) – Guía detallada para compilar desde el código fuente.
-- [COMPILATION.md](./docs/build/COMPILATION.md) – Procedimientos y requisitos de compilación.
-- [BUILD_SYSTEM.md](./docs/architecture/BUILD_SYSTEM.md) – Explicación del sistema de build.
-- [PACKAGING.md](./docs/build/PACKAGING.md) – Creación y estructura de paquetes distribuibles.
-- [DISTRIBUTION.md](./docs/build/DISTRIBUTION.md) – Canales y formatos de distribución.
-- [ARTIFACTS.md](./docs/build/ARTIFACTS.md) – Artefactos generados y dónde se producen.
-- [CROSS_COMPILATION.md](./docs/development/CROSS_COMPILATION.md) – Compilación para arquitecturas o plataformas distintas.
-- [TOOLCHAIN.md](./docs/development/TOOLCHAIN.md) – Compiladores, SDK y herramientas requeridas.
-- [BUILD_MATRIX.md](./docs/build/BUILD_MATRIX.md) – Combinaciones de sistemas, compiladores y versiones compatibles.
-- [REPRODUCIBLE_BUILDS.md](./docs/security/REPRODUCIBLE_BUILDS.md) – Cómo conseguir compilaciones reproducibles y verificables.
-- [BINARY_RELEASES.md](./docs/releases/BINARY_RELEASES.md) – Generación y publicación de binarios.
-- [SOURCE_RELEASES.md](./docs/releases/SOURCE_RELEASES.md) – Preparación de paquetes de código fuente.
-- [INSTALL_FROM_SOURCE.md](./docs/installation/INSTALL_FROM_SOURCE.md) – Instalación mediante compilación desde el código fuente.
+#### [21:02:27 UTC — Extended the agent compatibility survey](https://github.com/sandokanCat/.github/commit/fe2ddd77d8542ed3c31cd9a55ebf8ff54b1d6238)
 
-## 5. Despliegue, publicación y operaciones
+#### [20:42:31 UTC — Established the canonical instruction architecture](https://github.com/sandokanCat/.github/commit/c994341caa160a9dfc3c428612d7da10a232c39b)
 
-- [DEPLOY.md](./docs/deployment/DEPLOY.md) – Pasos concretos para desplegar.
-- [DEPLOYMENT.md](./docs/operations/DEPLOYMENT.md) – Arquitectura y estrategia de despliegue.
-- [DEPLOYMENT_GUIDE.md](./docs/deployment/DEPLOYMENT_GUIDE.md) – Guía detallada de despliegue.
-- [RELEASE.md](./docs/releases/RELEASE.md) – Preparación y publicación de una versión.
-- [RELEASING.md](./docs/operations/RELEASING.md) – Procedimiento repetible para publicar versiones.
-- [PUBLISHING.md](./docs/operations/PUBLISHING.md) – Publicación de paquetes, bibliotecas o documentación.
-- [PRODUCTION.md](./docs/operations/PRODUCTION.md) – Particularidades del entorno de producción.
-- [STAGING.md](./docs/operations/STAGING.md) – Configuración del entorno de preproducción.
-- [OPERATIONS.md](./docs/operations/OPERATIONS.md) – Operaciones rutinarias y mantenimiento del sistema.
-- [RUNBOOK.md](./docs/operations/RUNBOOK.md) – Procedimientos operativos repetibles.
-- [MONITORING.md](./docs/operations/MONITORING.md) – Métricas, alertas y monitorización.
-- [OBSERVABILITY.md](./docs/operations/OBSERVABILITY.md) – Logs, métricas, trazas y diagnóstico del sistema.
-- [LOGGING.md](./docs/operations/LOGGING.md) – Configuración y tratamiento de registros.
-- [BACKUP.md](./docs/operations/BACKUP.md) – Copias de seguridad y restauración.
-- [RESTORE.md](./docs/operations/RESTORE.md) – Recuperación de datos desde copias.
-- [DISASTER_RECOVERY.md](./docs/operations/DISASTER_RECOVERY.md) – Recuperación tras fallos graves.
-- [ROLLBACK.md](./docs/operations/ROLLBACK.md) – Reversión a una versión o configuración anterior.
-- [INCIDENT_RESPONSE.md](./docs/operations/INCIDENT_RESPONSE.md) – Respuesta operativa ante incidentes.
-- [CAPACITY_PLANNING.md](./docs/operations/CAPACITY_PLANNING.md) – Estimación de recursos y planificación de capacidad.
-- [SCALING.md](./docs/operations/SCALING.md) – Procedimientos de escalado.
-- [MAINTENANCE_WINDOW.md](./docs/operations/MAINTENANCE_WINDOW.md) – Ventanas de mantenimiento y restricciones operativas.
-- [SERVICE_LEVELS.md](./docs/operations/SERVICE_LEVELS.md) – Objetivos de disponibilidad y niveles de servicio.
-- [SLO.md](./docs/operations/SLO.md) – Objetivos de nivel de servicio.
-- [SLA.md](./docs/operations/SLA.md) – Condiciones de nivel de servicio.
+#### [19:56:15 UTC — Aligned the Claude entry point with canonical instructions](https://github.com/sandokanCat/.github/commit/2f543bba0f7fe96ee130b46f7d58cef213cad712)
 
-## 6. Arquitectura, diseño y decisiones técnicas
+#### [19:54:50 UTC — Prepared Aider instruction configuration](https://github.com/sandokanCat/.github/commit/8c2a88ead7a26ec804b3ea5b0f86783ada594930)
 
-- [ARCHITECTURE.md](./docs/architecture/ARCHITECTURE.md) – Visión general de la arquitectura.
-- [SYSTEM_ARCHITECTURE.md](./docs/architecture/SYSTEM_ARCHITECTURE.md) – Arquitectura global del sistema.
-- [DESIGN.md](./docs/architecture/DESIGN.md) – Diseño técnico o funcional.
-- [TECHNICAL_DESIGN.md](./docs/design/TECHNICAL_DESIGN.md) – Diseño técnico detallado.
-- [SPEC.md](./docs/specs/SPEC.md) – Especificación de una función o sistema.
-- [SPECIFICATION.md](./docs/specs/SPECIFICATION.md) – Requisitos y comportamiento esperado.
-- [REQUIREMENTS.md](./docs/architecture/REQUIREMENTS.md) – Requisitos funcionales y no funcionales.
-- [ADR.md](./docs/adr/ADR.md) – Documento general o índice de decisiones arquitectónicas.
-- [RFC.md](./docs/rfcs/RFC.md) – Propuesta técnica que requiere discusión o revisión.
-- [DECISIONS.md](./docs/decisions/DECISIONS.md) – Registro general de decisiones.
-- [DATA_MODEL.md](./docs/architecture/DATA_MODEL.md) – Entidades, relaciones y estructura de datos.
-- [DATABASE.md](./docs/architecture/DATABASE.md) – Diseño y funcionamiento de la base de datos.
-- [SCHEMA.md](./docs/architecture/SCHEMA.md) – Descripción de un esquema de datos o validación.
-- [API_DESIGN.md](./docs/api/API_DESIGN.md) – Criterios de diseño de la API.
-- [INTEGRATION_ARCHITECTURE.md](./docs/architecture/INTEGRATION_ARCHITECTURE.md) – Integraciones, límites y flujos entre sistemas.
-- [COMPONENTS.md](./docs/architecture/COMPONENTS.md) – Componentes y responsabilidades.
-- [MODULES.md](./docs/architecture/MODULES.md) – Módulos, interfaces y dependencias.
-- [DEPENDENCY_GRAPH.md](./docs/architecture/DEPENDENCY_GRAPH.md) – Relaciones y dependencias entre componentes.
-- [EVENT_MODEL.md](./docs/architecture/EVENT_MODEL.md) – Eventos, productores, consumidores y contratos.
-- [STATE_MACHINE.md](./docs/design/STATE_MACHINE.md) – Estados y transiciones de un sistema.
-- [SEQUENCE_DIAGRAMS.md](./docs/architecture/SEQUENCE_DIAGRAMS.md) – Interacciones temporales entre componentes.
-- [DESIGN_SYSTEM.md](./docs/design/DESIGN_SYSTEM.md) – Principios visuales, tokens y componentes de interfaz.
-- [UI_ARCHITECTURE.md](./docs/architecture/UI_ARCHITECTURE.md) – Estructura de la interfaz y sus componentes.
-- [ADR-0001.md](./docs/adr/ADR-0001.md) – Registro individual de una decisión arquitectónica.
-- [RFC-0001.md](./docs/rfcs/RFC-0001.md) – Propuesta técnica individual.
+#### [19:51:25 UTC — Prepared OpenCode instruction discovery](https://github.com/sandokanCat/.github/commit/72f375b05c255c49adca5e1a0a477ac4f0324dcd)
 
-## 7. API, protocolos e integraciones
+#### [18:57:10 UTC — Maintained editor instruction integration](https://github.com/sandokanCat/.github/commit/5e81cbf1ae6cccc2070ac8312bb772acc0070801)
 
-- [API.md](./docs/api/API.md) – Descripción general de la API.
-- [API_REFERENCE.md](./docs/api/API_REFERENCE.md) – Referencia de endpoints, parámetros y respuestas.
-- [API_GUIDE.md](./docs/api/API_GUIDE.md) – Guía práctica para consumir una API.
-- [REST_API.md](./docs/api/REST_API.md) – Particularidades de una API REST.
-- [GRAPHQL.md](./docs/api/GRAPHQL.md) – Uso del esquema y consultas GraphQL.
-- [WEBSOCKETS.md](./docs/api/WEBSOCKETS.md) – Comunicación mediante WebSocket.
-- [WEBHOOKS.md](./docs/api/WEBHOOKS.md) – Eventos salientes, payloads, firmas y reintentos.
-- [AUTHENTICATION.md](./docs/security/AUTHENTICATION.md) – Mecanismos de autenticación.
-- [AUTHORIZATION.md](./docs/security/AUTHORIZATION.md) – Permisos y control de acceso.
-- [ERROR_CODES.md](./docs/api/ERROR_CODES.md) – Catálogo de errores de una API o biblioteca.
-- [RATE_LIMITING.md](./docs/api/RATE_LIMITING.md) – Límites de solicitudes y tratamiento de excesos.
-- [PAGINATION.md](./docs/api/PAGINATION.md) – Convenciones de paginación.
-- [VERSIONING.md](./docs/api/VERSIONING.md) – Estrategia de versiones de la API o biblioteca.
-- [COMPATIBILITY.md](./docs/api/COMPATIBILITY.md) – Compatibilidad entre clientes, versiones y plataformas.
-- [INTEGRATIONS.md](./docs/integrations/INTEGRATIONS.md) – Servicios externos y mecanismos de integración.
-- [PLUGINS.md](./docs/api/PLUGINS.md) – Sistema de plugins y cómo desarrollarlos.
-- [EXTENSIONS.md](./docs/api/EXTENSIONS.md) – Extensiones disponibles y cómo implementarlas.
-- [ADAPTERS.md](./docs/architecture/ADAPTERS.md) – Adaptadores, contratos e interfaces.
-- [SDK.md](./docs/sdk/SDK.md) – Uso de un SDK.
-- [CLIENT_LIBRARIES.md](./docs/api/CLIENT_LIBRARIES.md) – Bibliotecas cliente soportadas.
-- [MCP.md](./docs/integrations/MCP.md) – Diseño o uso de una integración Model Context Protocol.
-- [PROTOCOL.md](./docs/api/PROTOCOL.md) – Protocolo de comunicación propio o implementado.
-- [OPENAPI.md](./docs/api/OPENAPI.md) – Cómo se utiliza la especificación OpenAPI en el proyecto.
-- [SCHEMA_REGISTRY.md](./docs/architecture/SCHEMA_REGISTRY.md) – Registro y gestión de esquemas.
+#### [18:54:24 UTC — Maintained Gemini instruction discovery configuration](https://github.com/sandokanCat/.github/commit/ebac9c8d77af3999929ae328d94072b42cc4cb15)
 
-## 8. Pruebas, calidad y mantenimiento del código
+#### [18:51:26 UTC — Aligned the Claude entry point with canonical instructions](https://github.com/sandokanCat/.github/commit/f7ed3f6b3bb4464d348878d55d9beec9f7a0de0d)
 
-- [TESTING.md](./docs/testing/TESTING.md) – Cómo ejecutar las pruebas.
-- [TEST_PLAN.md](./docs/testing/TEST_PLAN.md) – Alcance, estrategia y criterios de prueba.
-- [TEST_STRATEGY.md](./docs/testing/TEST_STRATEGY.md) – Enfoque global de calidad y pruebas.
-- [UNIT_TESTS.md](./docs/testing/UNIT_TESTS.md) – Ejecución y organización de pruebas unitarias.
-- [INTEGRATION_TESTS.md](./docs/testing/INTEGRATION_TESTS.md) – Pruebas entre componentes.
-- [E2E_TESTING.md](./docs/testing/E2E_TESTING.md) – Pruebas de extremo a extremo.
-- [ACCEPTANCE_TESTING.md](./docs/testing/ACCEPTANCE_TESTING.md) – Criterios y pruebas de aceptación.
-- [QA.md](./docs/testing/QA.md) – Procedimientos de aseguramiento de calidad.
-- [QUALITY_GATES.md](./docs/development/QUALITY_GATES.md) – Condiciones que debe superar un cambio antes de integrarse o publicarse.
-- [CODE_STYLE.md](./docs/development/CODE_STYLE.md) – Estilo y convenciones del código.
-- [STYLE_GUIDE.md](./docs/testing/STYLE_GUIDE.md) – Guía de estilo de código, escritura o interfaz.
-- [CODING_STANDARDS.md](./docs/development/CODING_STANDARDS.md) – Reglas de implementación.
-- [LINTING.md](./docs/development/LINTING.md) – Herramientas de lint y cómo ejecutarlas.
-- [FORMATTING.md](./docs/development/FORMATTING.md) – Formateo automático del código.
-- [DEBUGGING.md](./docs/development/DEBUGGING.md) – Técnicas y herramientas de depuración.
-- [PROFILING.md](./docs/performance/PROFILING.md) – Análisis de CPU, memoria y otros recursos.
-- [BENCHMARKS.md](./docs/performance/BENCHMARKS.md) – Metodología y resultados de pruebas de rendimiento.
-- [PERFORMANCE.md](./docs/testing/PERFORMANCE.md) – Consideraciones de rendimiento y optimización.
-- [REFACTORING.md](./docs/development/REFACTORING.md) – Criterios y procedimientos de refactorización.
-- [TECHNICAL_DEBT.md](./docs/testing/TECHNICAL_DEBT.md) – Deuda técnica conocida y mejoras pendientes.
-- [KNOWN_ISSUES.md](./docs/testing/KNOWN_ISSUES.md) – Problemas conocidos y limitaciones.
-- [DEPRECATIONS.md](./docs/testing/DEPRECATIONS.md) – Funcionalidades obsoletas y alternativas.
-- [FLAKY_TESTS.md](./docs/testing/FLAKY_TESTS.md) – Pruebas inestables y medidas correctoras.
-- [TEST_DATA.md](./docs/testing/TEST_DATA.md) – Preparación, procedencia y gestión de datos de prueba.
-- [COVERAGE.md](./docs/testing/COVERAGE.md) – Objetivos o interpretación de cobertura de código.
-- [MUTATION_TESTING.md](./docs/testing/MUTATION_TESTING.md) – Metodología de pruebas de mutación.
+### Documentation and information architecture
 
-## 9. Seguridad, privacidad y cumplimiento
+Organized documentation entry points and repository-level reference material.
 
-- [SECURITY_POLICY.md](./docs/security/SECURITY_POLICY.md) – Política de seguridad más amplia.
-- [THREAT_MODEL.md](./docs/security/THREAT_MODEL.md) – Activos, amenazas, superficies de ataque y mitigaciones.
-- [SECURE_DEVELOPMENT.md](./docs/security/SECURE_DEVELOPMENT.md) – Prácticas de desarrollo seguro.
-- [SECURITY_ARCHITECTURE.md](./docs/security/SECURITY_ARCHITECTURE.md) – Controles y arquitectura de seguridad.
-- [VULNERABILITY_DISCLOSURE.md](./docs/security/VULNERABILITY_DISCLOSURE.md) – Procedimiento de divulgación responsable.
-- [ACCESS_CONTROL.md](./docs/security/ACCESS_CONTROL.md) – Roles, permisos y reglas de acceso.
-- [ENCRYPTION.md](./docs/security/ENCRYPTION.md) – Uso de cifrado y decisiones criptográficas.
-- [KEY_MANAGEMENT.md](./docs/security/KEY_MANAGEMENT.md) – Generación, custodia, rotación y revocación de claves.
-- [SECRETS_MANAGEMENT.md](./docs/security/SECRETS_MANAGEMENT.md) – Gestión de secretos y credenciales.
-- [PRIVACY.md](./docs/privacy/PRIVACY.md) – Consideraciones de privacidad y tratamiento de datos.
-- [DATA_PROTECTION.md](./docs/privacy/DATA_PROTECTION.md) – Medidas de protección de datos.
-- [DATA_RETENTION.md](./docs/privacy/DATA_RETENTION.md) – Conservación y eliminación de datos.
-- [DATA_CLASSIFICATION.md](./docs/security/DATA_CLASSIFICATION.md) – Clasificación de datos por sensibilidad.
-- [COMPLIANCE.md](./docs/compliance/COMPLIANCE.md) – Requisitos de cumplimiento y controles aplicables.
-- [AUDIT.md](./docs/security/AUDIT.md) – Alcance o resultados de una auditoría.
-- [SECURITY_AUDIT.md](./docs/security/SECURITY_AUDIT.md) – Auditoría técnica de seguridad.
-- [PENTEST.md](./docs/security/PENTEST.md) – Alcance y metodología de una prueba de penetración.
-- [SBOM.md](./docs/security/SBOM.md) – Explicación del inventario de componentes de software.
-- [SUPPLY_CHAIN_SECURITY.md](./docs/security/SUPPLY_CHAIN_SECURITY.md) – Riesgos de la cadena de suministro de software.
-- [DEPENDENCY_SECURITY.md](./docs/security/DEPENDENCY_SECURITY.md) – Auditoría y gestión de dependencias vulnerables.
-- [CRYPTOGRAPHY.md](./docs/security/CRYPTOGRAPHY.md) – Diseño criptográfico y algoritmos empleados.
-- [ABUSE_CASES.md](./docs/security/ABUSE_CASES.md) – Casos de abuso y controles asociados.
-- [RISK_ASSESSMENT.md](./docs/security/RISK_ASSESSMENT.md) – Identificación y evaluación de riesgos.
+#### [10:06:09 UTC — Initialized release-change documentation](https://github.com/sandokanCat/.github/commit/7cbc16e2ef723f3c592bdee4c4cc78e94b367c7f)
 
-## 10. Guías de usuario, tutoriales y material educativo
+### Repository configuration and metadata
 
-- [USER_GUIDE.md](./docs/user-guide/USER_GUIDE.md) – Manual de uso completo.
-- [ADMIN_GUIDE.md](./docs/guides/ADMIN_GUIDE.md) – Operación y administración del software.
-- [USAGE.md](./docs/guides/USAGE.md) – Instrucciones de uso y ejemplos básicos.
-- [TUTORIAL.md](./docs/tutorials/TUTORIAL.md) – Tutorial práctico paso a paso.
-- [TUTORIALS.md](./docs/guides/TUTORIALS.md) – Índice de tutoriales.
-- [EXAMPLES.md](./docs/examples/EXAMPLES.md) – Ejemplos de uso.
-- [COOKBOOK.md](./docs/guides/COOKBOOK.md) – Recetas para tareas habituales.
-- [CLI.md](./docs/guides/CLI.md) – Uso de la interfaz de línea de comandos.
-- [COMMANDS.md](./docs/cli/COMMANDS.md) – Referencia de comandos.
-- [GLOSSARY.md](./docs/guides/GLOSSARY.md) – Definiciones de términos.
-- [LIMITATIONS.md](./docs/guides/LIMITATIONS.md) – Funcionalidades no soportadas y restricciones conocidas.
-- [MIGRATION_GUIDE.md](./docs/migration/MIGRATION_GUIDE.md) – Guía detallada para migraciones.
-- [HOW_IT_WORKS.md](./docs/guides/HOW_IT_WORKS.md) – Explicación conceptual del funcionamiento.
-- [CONCEPTS.md](./docs/guides/CONCEPTS.md) – Conceptos fundamentales del sistema.
-- [RECIPES.md](./docs/guides/RECIPES.md) – Colección de soluciones prácticas.
-- [BEST_PRACTICES.md](./docs/guides/BEST_PRACTICES.md) – Prácticas recomendadas.
-- [ANTI_PATTERNS.md](./docs/guides/ANTI_PATTERNS.md) – Prácticas que conviene evitar y sus motivos.
-- [CHEATSHEET.md](./docs/guides/CHEATSHEET.md) – Resumen de comandos o conceptos de consulta rápida.
-- [GLOSSARY_OF_TERMS.md](./docs/guides/GLOSSARY_OF_TERMS.md) – Glosario técnico ampliado.
-- [FAQ_DEVELOPERS.md](./docs/development/FAQ_DEVELOPERS.md) – Preguntas frecuentes para desarrolladores.
-- [FAQ_USERS.md](./docs/user-guide/FAQ_USERS.md) – Preguntas frecuentes para usuarios.
-- [ACCESSIBILITY.md](./docs/ACCESSIBILITY.md) – Guía de accesibilidad o criterios de uso accesible.
-- [LOCALIZATION.md](./docs/guides/LOCALIZATION.md) – Cómo añadir idiomas y traducir la aplicación.
-- [TRANSLATION.md](./docs/guides/TRANSLATION.md) – Flujo de traducción y gestión de cadenas.
+Maintained shared repository configuration and descriptive metadata.
 
-## 11. Gestión de proyectos, planificación y decisiones
+#### [19:43:58 UTC — Maintained shared repository configuration](https://github.com/sandokanCat/.github/commit/c9eb55c5539aebc76eebbacd7048a2ea727bdc69)
 
-- [PLAN.md](./docs/project/PLAN.md) – Plan de ejecución o desarrollo.
-- [TODO.md](./docs/project/TODO.md) – Tareas pendientes.
-- [TASKS.md](./docs/project/TASKS.md) – Desglose de tareas.
-- [MILESTONES.md](./docs/project/MILESTONES.md) – Hitos y objetivos verificables.
-- [PROGRESS.md](./docs/project/PROGRESS.md) – Seguimiento del progreso.
-- [MEETING_NOTES.md](./docs/meetings/MEETING_NOTES.md) – Actas o notas de reuniones.
-- [POSTMORTEM.md](./docs/postmortems/POSTMORTEM.md) – Análisis de un incidente o fallo ya ocurrido.
-- [LESSONS_LEARNED.md](./docs/project/LESSONS_LEARNED.md) – Aprendizajes derivados del proyecto.
-- [HANDOVER.md](./docs/operations/HANDOVER.md) – Transferencia de responsabilidades o conocimientos.
-- [STAKEHOLDERS.md](./docs/project/STAKEHOLDERS.md) – Partes interesadas y sus responsabilidades.
-- [PROJECT_CHARTER.md](./docs/project/PROJECT_CHARTER.md) – Objetivos, alcance, autoridad y marco del proyecto.
-- [RISK_REGISTER.md](./docs/project/RISK_REGISTER.md) – Registro de riesgos, probabilidad, impacto y mitigación.
-- [ASSUMPTIONS.md](./docs/project/ASSUMPTIONS.md) – Hipótesis y supuestos de planificación.
-- [SCOPE.md](./docs/project/SCOPE.md) – Alcance incluido y excluido.
-- [CHANGE_REQUESTS.md](./docs/project/CHANGE_REQUESTS.md) – Procedimiento de solicitud y evaluación de cambios.
-- [DEFINITION_OF_DONE.md](./docs/development/DEFINITION_OF_DONE.md) – Criterios para considerar completada una tarea.
-- [DEFINITION_OF_READY.md](./docs/development/DEFINITION_OF_READY.md) – Criterios para considerar preparada una tarea.
-- [WORKFLOW.md](./docs/project/WORKFLOW.md) – Flujo de trabajo general del equipo o proyecto.
-- [PROCESS.md](./docs/project/PROCESS.md) – Proceso operativo o de desarrollo.
-- [PRIORITIES.md](./docs/project/PRIORITIES.md) – Criterios y orden de prioridades.
-- [SUPPORT_MODEL.md](./docs/operations/SUPPORT_MODEL.md) – Modelo de soporte y responsabilidades.
+#### [19:40:19 UTC — Maintained shared repository configuration](https://github.com/sandokanCat/.github/commit/d3c125ed4ac9babc8e9af5eb5f3c6ed74be531b5)
 
-## 12. Versionado, publicación y compatibilidad
+#### [19:28:15 UTC — Maintained shared repository configuration](https://github.com/sandokanCat/.github/commit/7d2fb645ded92b293a8900795cda41b66f1b5edc)
 
-- [SEMANTIC_VERSIONING.md](./docs/releases/SEMANTIC_VERSIONING.md) – Cómo se aplica el versionado semántico.
-- [RELEASE_PROCESS.md](./docs/releases/RELEASE_PROCESS.md) – Proceso completo de publicación.
-- [RELEASE_CHECKLIST.md](./docs/releases/RELEASE_CHECKLIST.md) – Lista de comprobación previa a publicar.
-- [MIGRATION.md](./docs/migration/MIGRATION.md) – Cambios requeridos al migrar.
-- [BREAKING_CHANGES.md](./docs/releases/BREAKING_CHANGES.md) – Cambios incompatibles y sus consecuencias.
-- [DEPRECATION_POLICY.md](./docs/releases/DEPRECATION_POLICY.md) – Política de retirada de funciones.
-- [SUPPORT_POLICY.md](./docs/releases/SUPPORT_POLICY.md) – Política de versiones soportadas.
-- [COMPATIBILITY_MATRIX.md](./docs/releases/COMPATIBILITY_MATRIX.md) – Matriz de versiones, plataformas o dependencias compatibles.
-- [LIFECYCLE.md](./docs/releases/LIFECYCLE.md) – Ciclo de vida de versiones o componentes.
-- [LTS.md](./docs/releases/LTS.md) – Política de soporte a largo plazo.
-- [BACKPORTS.md](./docs/releases/BACKPORTS.md) – Criterios para incorporar correcciones a ramas anteriores.
-- [HOTFIX.md](./docs/releases/HOTFIX.md) – Procedimiento de corrección urgente.
-- [BRANCHING_STRATEGY.md](./docs/development/BRANCHING_STRATEGY.md) – Estrategia de ramas Git.
-- [TAGGING.md](./docs/releases/TAGGING.md) – Convenciones para etiquetas Git.
-- [CHANGE_MANAGEMENT.md](./docs/releases/CHANGE_MANAGEMENT.md) – Evaluación, aprobación y control de cambios.
+#### [19:24:47 UTC — Maintained shared repository configuration](https://github.com/sandokanCat/.github/commit/a7e516be6706b943496bbabce88534a127dd2c5a)
 
-## 13. Documentación de infraestructura, redes y sistemas
+#### [19:10:57 UTC — Maintained shared repository configuration](https://github.com/sandokanCat/.github/commit/11337cb315a1aaf164a917091c976095abcd8b7f)
 
-- [INFRASTRUCTURE.md](./docs/infrastructure/INFRASTRUCTURE.md) – Inventario y arquitectura de infraestructura.
-- [INFRASTRUCTURE_OVERVIEW.md](./docs/infrastructure/INFRASTRUCTURE_OVERVIEW.md) – Visión general de recursos y servicios.
-- [NETWORK.md](./docs/infrastructure/NETWORK.md) – Diseño y funcionamiento de la red.
-- [NETWORKING.md](./docs/infrastructure/NETWORKING.md) – Configuración de redes y comunicaciones.
-- [DNS.md](./docs/operations/DNS.md) – Configuración DNS y resolución de nombres.
-- [TLS.md](./docs/security/TLS.md) – Configuración y renovación de certificados TLS.
-- [CERTIFICATES.md](./docs/security/CERTIFICATES.md) – Gestión del ciclo de vida de certificados.
-- [FIREWALL.md](./docs/infrastructure/FIREWALL.md) – Reglas y diseño del cortafuegos.
-- [CONTAINERS.md](./docs/infrastructure/CONTAINERS.md) – Uso y arquitectura de contenedores.
-- [DOCKER.md](./docs/infrastructure/DOCKER.md) – Construcción, ejecución y configuración de Docker.
-- [KUBERNETES.md](./docs/infrastructure/KUBERNETES.md) – Despliegue y operación en Kubernetes.
-- [HELM.md](./docs/infrastructure/HELM.md) – Uso de charts y configuración de Helm.
-- [TERRAFORM.md](./docs/infrastructure/TERRAFORM.md) – Organización y uso de Terraform.
-- [INFRASTRUCTURE_AS_CODE.md](./docs/infrastructure/INFRASTRUCTURE_AS_CODE.md) – Principios y flujo de infraestructura como código.
-- [CLOUD_ARCHITECTURE.md](./docs/architecture/CLOUD_ARCHITECTURE.md) – Arquitectura de servicios cloud.
-- [AWS.md](./docs/infrastructure/AWS.md) – Configuración o arquitectura específica de AWS.
-- [AZURE.md](./docs/infrastructure/AZURE.md) – Configuración o arquitectura específica de Azure.
-- [GCP.md](./docs/infrastructure/GCP.md) – Configuración o arquitectura específica de Google Cloud.
-- [RESOURCE_LIMITS.md](./docs/operations/RESOURCE_LIMITS.md) – Límites de CPU, memoria, almacenamiento u otros recursos.
-- [STORAGE.md](./docs/infrastructure/STORAGE.md) – Diseño y funcionamiento del almacenamiento.
-- [HIGH_AVAILABILITY.md](./docs/architecture/HIGH_AVAILABILITY.md) – Redundancia y tolerancia a fallos.
-- [NETWORK_SECURITY.md](./docs/security/NETWORK_SECURITY.md) – Segmentación, controles de red y riesgos.
-- [ENVIRONMENT_TOPOLOGY.md](./docs/infrastructure/ENVIRONMENT_TOPOLOGY.md) – Relación entre entornos y sus recursos.
+#### [19:06:43 UTC — Maintained shared repository configuration](https://github.com/sandokanCat/.github/commit/d5708aaeee910d687bf81b5b085e5968dd5cfbdc)
 
-## 14. Datos, bases de datos y procesamiento
+### Site metadata and discoverability
 
-- [DATABASE_SCHEMA.md](./docs/data/DATABASE_SCHEMA.md) – Esquema de la base de datos.
-- [MIGRATIONS.md](./docs/data/MIGRATIONS.md) – Gestión de migraciones de base de datos.
-- [SEEDING.md](./docs/data/SEEDING.md) – Carga inicial de datos.
-- [DATA_IMPORT.md](./docs/data/DATA_IMPORT.md) – Importación de datos.
-- [DATA_EXPORT.md](./docs/data/DATA_EXPORT.md) – Exportación de datos.
-- [DATA_VALIDATION.md](./docs/data/DATA_VALIDATION.md) – Validación de datos y reglas de integridad.
-- [DATA_QUALITY.md](./docs/data/DATA_QUALITY.md) – Calidad, consistencia y completitud de datos.
-- [DATA_PIPELINE.md](./docs/data/DATA_PIPELINE.md) – Flujo de procesamiento y transformación.
-- [ETL.md](./docs/data/ETL.md) – Extracción, transformación y carga.
-- [DATA_LINEAGE.md](./docs/data/DATA_LINEAGE.md) – Procedencia y transformaciones de los datos.
-- [DATA_DICTIONARY.md](./docs/data/DATA_DICTIONARY.md) – Definición de campos, tipos y significados.
-- [DATA_GOVERNANCE.md](./docs/data/DATA_GOVERNANCE.md) – Responsabilidades, políticas y calidad del dato.
-- [BACKUP_STRATEGY.md](./docs/operations/BACKUP_STRATEGY.md) – Estrategia de copias y recuperación de datos.
-- [RETENTION_POLICY.md](./docs/data/RETENTION_POLICY.md) – Retención y eliminación de información.
-- [DATA_PRIVACY.md](./docs/privacy/DATA_PRIVACY.md) – Consideraciones de privacidad en el tratamiento de datos.
-- [ANALYTICS.md](./docs/data/ANALYTICS.md) – Instrumentación, métricas de producto y analítica.
-- [DATA_WAREHOUSE.md](./docs/data/DATA_WAREHOUSE.md) – Arquitectura del almacén de datos.
-- [STREAMING.md](./docs/data/STREAMING.md) – Procesamiento de datos en streaming.
-- [DATA_FORMATS.md](./docs/data/DATA_FORMATS.md) – Formatos de datos admitidos.
+Maintained metadata used for site discovery, indexing, and machine-readable repository information.
 
-## 15. Documentación para herramientas de IA y asistentes de programación
+#### [19:29:57 UTC — Maintained site discovery metadata](https://github.com/sandokanCat/.github/commit/4bee7f733af6c7bfcdcf8433d671cf1b29db5ca1)
 
-- [AGENTS.md](./AGENTS.md) – Instrucciones y contexto para agentes de programación compatibles.
-- [CLAUDE.md](./CLAUDE.md) – Instrucciones persistentes para Claude Code.
-- [GEMINI.md](./GEMINI.md) – Contexto e instrucciones para Gemini CLI.
-- [copilot-instructions.md](./.github/copilot-instructions.md) – Instrucciones generales de GitHub Copilot para el repositorio.
-- [project.instructions.md](./.github/instructions/project.instructions.md) – Instrucciones de Copilot con alcance específico según su configuración (representative placeholder for the documented filename pattern).
-- [SKILL.md](./SKILL.md) – Define una habilidad reutilizable para determinados agentes.
-- [PROMPT.md](./docs/ai/PROMPT.md) – Prompt reutilizable o instrucciones para una tarea.
-- [PROMPTS.md](./prompts/PROMPTS.md) – Catálogo de prompts.
-- [AI_GUIDELINES.md](./docs/ai/AI_GUIDELINES.md) – Pautas para utilizar IA en el proyecto.
-- [AI_POLICY.md](./docs/ai/AI_POLICY.md) – Política de uso de IA.
-- [CONTEXT.md](./docs/ai/CONTEXT.md) – Contexto de un agente o proceso automatizado.
-- [MODEL_CARD.md](./docs/ai/MODEL_CARD.md) – Información sobre un modelo, sus capacidades y limitaciones.
-- [EVALUATION.md](./docs/ai/EVALUATION.md) – Metodología para evaluar modelos o agentes.
-- [EVALS.md](./docs/ai/EVALS.md) – Conjunto o metodología de evaluaciones automatizadas.
-- [GUARDRAILS.md](./docs/ai/GUARDRAILS.md) – Restricciones y controles para un sistema de IA.
-- [TOOLING.md](./docs/development/TOOLING.md) – Herramientas disponibles para el agente o el equipo.
-- [AGENT_ARCHITECTURE.md](./docs/ai/AGENT_ARCHITECTURE.md) – Arquitectura de un agente o sistema multiagente.
+#### [19:13:24 UTC — Maintained site discovery metadata](https://github.com/sandokanCat/.github/commit/35affa08b100ebf4db6964cf06616c7e216a0086)
 
-## 16. Documentación de sitios, manuales y generadores de documentación
+#### [18:53:28 UTC — Maintained site discovery metadata](https://github.com/sandokanCat/.github/commit/76af75ba246cf4187f4dbe89e20a1a60ecc0b97d)
 
-- [index.md](./docs/index.md) – Página de entrada de una sección documental.
-- [mkdocs.yml](./mkdocs.yml) – Configuración del sitio MkDocs.
-- [DOCS.md](./docs/documentation/DOCS.md) – Índice o explicación de la documentación disponible.
-- [DOCUMENTATION.md](./docs/documentation/DOCUMENTATION.md) – Guía general de la documentación del proyecto.
-- [DOCUMENTATION_GUIDE.md](./docs/documentation/DOCUMENTATION_GUIDE.md) – Normas para escribir y mantener documentación.
-- [WRITING_GUIDE.md](./docs/documentation/WRITING_GUIDE.md) – Criterios de redacción técnica.
-- [INFORMATION_ARCHITECTURE.md](./docs/documentation/INFORMATION_ARCHITECTURE.md) – Organización de la información y navegación.
-- [DOCS_ARCHITECTURE.md](./docs/documentation/DOCS_ARCHITECTURE.md) – Organización interna del sistema documental.
-- [VERSIONED_DOCS.md](./docs/documentation/VERSIONED_DOCS.md) – Gestión de versiones de la documentación.
-- [TRANSLATION_GUIDE.md](./docs/documentation/TRANSLATION_GUIDE.md) – Proceso de traducción documental.
-- [DOCS_DEPLOYMENT.md](./docs/operations/DOCS_DEPLOYMENT.md) – Publicación del sitio documental.
-- [DOCS_MAINTENANCE.md](./docs/documentation/DOCS_MAINTENANCE.md) – Mantenimiento y revisión de documentación.
+#### [18:49:21 UTC — Maintained site discovery metadata](https://github.com/sandokanCat/.github/commit/e06ef812d8c9803edfd263b423ae395f1e1c2d59)
 
-## 17. Documentación legal, licencias y políticas
+### Licensing and project metadata
 
-- [TERMS.md](./docs/legal/TERMS.md) – Condiciones de uso.
-- [TERMS_OF_SERVICE.md](./docs/legal/TERMS_OF_SERVICE.md) – Condiciones de servicio.
-- [PRIVACY_POLICY.md](./docs/legal/PRIVACY_POLICY.md) – Política de privacidad.
-- [COOKIE_POLICY.md](./docs/legal/COOKIE_POLICY.md) – Política de cookies.
-- [ACCEPTABLE_USE_POLICY.md](./docs/policies/ACCEPTABLE_USE_POLICY.md) – Usos permitidos y prohibidos.
-- [DATA_PROCESSING.md](./docs/privacy/DATA_PROCESSING.md) – Tratamiento de datos personales.
-- [DATA_PROCESSING_AGREEMENT.md](./docs/legal/DATA_PROCESSING_AGREEMENT.md) – Condiciones del tratamiento de datos entre partes.
-- [THIRD_PARTY_NOTICES.md](./docs/legal/THIRD_PARTY_NOTICES.md) – Atribuciones y avisos de terceros.
-- [EXPORT_CONTROL.md](./docs/legal/EXPORT_CONTROL.md) – Consideraciones de control de exportación.
-- [ETHICS.md](./docs/policies/ETHICS.md) – Principios éticos del proyecto.
-- [ACCESSIBILITY_POLICY.md](./docs/policies/ACCESSIBILITY_POLICY.md) – Política de accesibilidad.
+Maintained licensing and related project metadata.
 
-## 18. Investigación científica, reproducibilidad y documentación académica
+#### [19:15:24 UTC — Maintained project licensing metadata](https://github.com/sandokanCat/.github/commit/141228ae6024e15683f6a0fb2d829564020dd11f)
 
-- [RESEARCH.md](./docs/research/RESEARCH.md) – Contexto de investigación y preguntas de estudio.
-- [METHODOLOGY.md](./docs/research/METHODOLOGY.md) – Metodología utilizada.
-- [EXPERIMENTS.md](./docs/research/EXPERIMENTS.md) – Diseño y registro de experimentos.
-- [REPRODUCIBILITY.md](./docs/research/REPRODUCIBILITY.md) – Cómo reproducir resultados o experimentos.
-- [DATASET.md](./docs/data/DATASET.md) – Descripción de un conjunto de datos.
-- [DATASET_CARD.md](./docs/data/DATASET_CARD.md) – Procedencia, composición, limitaciones y usos de un dataset.
-- [EXPERIMENT_LOG.md](./docs/research/EXPERIMENT_LOG.md) – Registro de experimentos.
-- [RESULTS.md](./docs/research/RESULTS.md) – Resultados obtenidos y su interpretación.
-- [ETHICS_STATEMENT.md](./docs/research/ETHICS_STATEMENT.md) – Consideraciones éticas de una investigación.
-- [RESEARCH_QUESTIONS.md](./docs/research/RESEARCH_QUESTIONS.md) – Preguntas e hipótesis de investigación.
-- [BIBLIOGRAPHY.md](./docs/research/BIBLIOGRAPHY.md) – Bibliografía en formato legible por personas.
-- [REFERENCES.md](./docs/research/REFERENCES.md) – Referencias y fuentes.
-- [REPLICATION_GUIDE.md](./docs/research/REPLICATION_GUIDE.md) – Instrucciones para replicar un estudio.
+### Dependency maintenance
 
-## 19. Producto, experiencia de usuario y accesibilidad
+Applied or integrated automated dependency maintenance across auxiliary projects.
 
-- [PRODUCT.md](./docs/product/PRODUCT.md) – Visión y propósito del producto.
-- [PRODUCT_REQUIREMENTS.md](./docs/product/PRODUCT_REQUIREMENTS.md) – Requisitos del producto.
-- [PRD.md](./docs/product/PRD.md) – Documento de requisitos de producto (Product Requirements Document).
-- [USER_STORIES.md](./docs/product/USER_STORIES.md) – Historias de usuario y necesidades.
-- [PERSONAS.md](./docs/product/PERSONAS.md) – Perfiles de usuarios objetivo.
-- [USER_FLOWS.md](./docs/design/USER_FLOWS.md) – Recorridos de usuarios.
-- [UX.md](./docs/design/UX.md) – Criterios de experiencia de usuario.
-- [UI.md](./docs/design/UI.md) – Diseño e implementación de interfaz.
-- [BRANDING.md](./docs/design/BRANDING.md) – Identidad visual, tono y usos de marca.
-- [CONTENT_GUIDELINES.md](./docs/product/CONTENT_GUIDELINES.md) – Normas de contenido y microcopy.
-- [EXPERIMENTATION.md](./docs/product/EXPERIMENTATION.md) – Pruebas A/B y experimentos de producto.
-- [FEATURE_FLAGS.md](./docs/operations/FEATURE_FLAGS.md) – Uso y gestión de funcionalidades activables.
-- [FEEDBACK.md](./docs/product/FEEDBACK.md) – Canales y proceso de recogida de comentarios.
-- [USER_RESEARCH.md](./docs/research/USER_RESEARCH.md) – Metodología y resultados de investigación de usuarios.
-- [INTERNATIONALIZATION.md](./docs/product/INTERNATIONALIZATION.md) – Arquitectura y proceso de internacionalización.
+#### [19:16:40 UTC — Integrated automated dependency maintenance](https://github.com/sandokanCat/.github/commit/1a0b6704be29c3570c11f4f978f2265cd0f4e49a)
 
-## 20. Documentación específica de dominio
+#### [19:16:26 UTC — Integrated automated dependency maintenance](https://github.com/sandokanCat/.github/commit/00398d3c30f81b32255ab643238cf72d366d5d20)
 
-- [BLOCKCHAIN.md](./docs/architecture/BLOCKCHAIN.md) – Arquitectura e integración con blockchain.
-- [SMART_CONTRACTS.md](./docs/contracts/SMART_CONTRACTS.md) – Organización, interfaces y comportamiento de contratos inteligentes.
-- [TOKENOMICS.md](./docs/domain/TOKENOMICS.md) – Diseño económico de tokens.
-- [CONSENSUS.md](./docs/architecture/CONSENSUS.md) – Algoritmo o mecanismo de consenso.
-- [WALLETS.md](./docs/domain/WALLETS.md) – Gestión e integración de wallets.
-- [RPC.md](./docs/domain/RPC.md) – Interfaces RPC y configuración de nodos.
-- [NODE_OPERATIONS.md](./docs/operations/NODE_OPERATIONS.md) – Instalación, mantenimiento y operación de nodos.
-- [MINING.md](./docs/domain/MINING.md) – Diseño u operación de minería, si procede.
-- [VALIDATORS.md](./docs/domain/VALIDATORS.md) – Operación y responsabilidades de validadores.
-- [DEFI.md](./docs/domain/DEFI.md) – Arquitectura de aplicaciones de finanzas descentralizadas.
+#### [11:07:59 UTC — Updated managed dependencies](https://github.com/sandokanCat/.github/commit/7a7e2e22ed75499e0939308a726084b93356544e)
 
-## Existing GitHub and documentation configuration
+#### [11:05:47 UTC — Updated managed dependencies](https://github.com/sandokanCat/.github/commit/26b64470d1b6ba649494be93ed3dc146959b6c0a)
 
-- [sidebars.js](./sidebars.js) – Configuración de la navegación lateral en Docusaurus.
+#### [10:09:21 UTC — Integrated automated dependency maintenance](https://github.com/sandokanCat/.github/commit/4ddc9a7250026cb0ade91f4e248bd265248544b4)
 
-- [Docusaurus configuration](./docusaurus.config.js) – Configuration for a Docusaurus documentation site.
-- [Issue template configuration](./.github/ISSUE_TEMPLATE/config.yml) – GitHub issue template chooser and contact links.
-- [Bug report template](./.github/ISSUE_TEMPLATE/bug_report.yml) – Structured bug reports.
-- [Feature request template](./.github/ISSUE_TEMPLATE/feature_request.yml) – Structured feature proposals.
-- [Discussion: ideas](./.github/DISCUSSION_TEMPLATE/ideas.yml) – Template for idea discussions.
-- [Discussion: Q&A](./.github/DISCUSSION_TEMPLATE/q-a.yml) – Template for questions and answers.
-- [Vulnerability report configuration](./.github/VULNERABILITY_REPORT.yml) – Existing placeholder for vulnerability-reporting configuration.
-- [GitHub funding configuration](./.github/FUNDING.yml) – Sponsor and funding links.
-- [CODEOWNERS](./docs/CODEOWNERS) – Existing code ownership file at a GitHub-supported location.
+## 2026-10-23 (UTC)
+
+### Dependency maintenance
+
+Applied or integrated automated dependency maintenance across auxiliary projects.
+
+#### [23:00:47 UTC — Updated managed dependencies](https://github.com/sandokanCat/.github/commit/a72600a9c3e6a2516d983e5523ba22bdb544f3fd)
+
+## 2026-10-22 (UTC)
+
+### Site metadata and discoverability
+
+Maintained metadata used for site discovery, indexing, and machine-readable repository information.
+
+#### [07:20:23 UTC — Maintained site discovery metadata](https://github.com/sandokanCat/.github/commit/97782bba9b6d0fb1061b1c3592eb8a9fc9a0c86e)
+
+## 2026-10-21 (UTC)
+
+### Repository configuration and metadata
+
+Maintained shared repository configuration and descriptive metadata.
+
+#### [22:29:23 UTC — Maintained shared repository configuration](https://github.com/sandokanCat/.github/commit/2574b4925cf545bc0e414ae0b047e21931c21cc9)
+
+### Licensing and project metadata
+
+Maintained licensing and related project metadata.
+
+#### [23:46:24 UTC — Maintained project licensing metadata](https://github.com/sandokanCat/.github/commit/96f25d886806a9c07b3bbda4d6f3de294423a5e2)
+
+## 2026-10-20 (UTC)
+
+### AI instruction architecture
+
+Established and extended a canonical instruction model with compatibility entry points for different agent products and generations. Compatibility remains client- and version-dependent.
+
+#### [05:16:23 UTC — Maintained AI instruction compatibility](https://github.com/sandokanCat/.github/commit/6dc05f8c66b6a18cedd16eb62ab45a29a17f43e8)
+
+#### [05:16:21 UTC — Maintained Gemini instruction discovery configuration](https://github.com/sandokanCat/.github/commit/989f5b825d75fd80c6efe52b19ae0456994338f5)
+
+#### [05:16:19 UTC — Aligned the Claude entry point with canonical instructions](https://github.com/sandokanCat/.github/commit/12223ec97fda25963f10515d4e9f91c5f9dc3977)
+
+#### [05:16:17 UTC — Maintained editor instruction integration](https://github.com/sandokanCat/.github/commit/be3481f011cb7a00f5fc0ce62494c3244e0f2f45)
+
+### Documentation and information architecture
+
+Organized documentation entry points and repository-level reference material.
+
+#### [06:14:53 UTC — Maintained documentation-site configuration](https://github.com/sandokanCat/.github/commit/c681d70828f9a4581fde460f764ed880bf8ba08b)
+
+#### [06:14:22 UTC — Organized the repository documentation index](https://github.com/sandokanCat/.github/commit/b85269fdde5506e96e43fc703507fb0e82bc0cbd)
+
+#### [05:34:40 UTC — Organized the repository documentation index](https://github.com/sandokanCat/.github/commit/a75818a2817defd6e5758e8b01c2f9365d833e4f)
+
+#### [05:16:34 UTC — Organized the repository documentation index](https://github.com/sandokanCat/.github/commit/727d0d46bdd30d65a3638e2d5188f1e6ce83a9ac)
+
+#### [05:16:28 UTC — Maintained documentation structure](https://github.com/sandokanCat/.github/commit/fc8165f6d8b5c7860bfce5f306c92946b8a1201c)
+
+### Repository configuration and metadata
+
+Maintained shared repository configuration and descriptive metadata.
+
+#### [10:17:22 UTC — Maintained shared repository configuration](https://github.com/sandokanCat/.github/commit/318c0484410c63bd8f7b632f6c268d31d558c34c)
+
+#### [05:16:15 UTC — Maintained shared repository configuration](https://github.com/sandokanCat/.github/commit/408e55b8f0df3d3457e22d200c0f9c175843f419)
+
+### Site metadata and discoverability
+
+Maintained metadata used for site discovery, indexing, and machine-readable repository information.
+
+#### [11:37:58 UTC — Maintained site discovery metadata](https://github.com/sandokanCat/.github/commit/bc245508c702840fa9b1fd87614cbd7dc2ea204e)
+
+#### [11:37:38 UTC — Maintained site discovery metadata](https://github.com/sandokanCat/.github/commit/9d802d36b6d52f282bc5d8a651f56b69c895185c)
+
+#### [11:37:22 UTC — Maintained site discovery metadata](https://github.com/sandokanCat/.github/commit/bfd97c0c317c25aff58b944c6638baad4d1cbf87)
+
+### Community infrastructure
+
+Established or refined reusable community-facing repository resources.
+
+#### [05:34:25 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/70bd2fbbdf6c3ccfc2a7271588ad5061d19883bf)
+
+#### [05:34:23 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/0dda5bfc4c89dfc025df4b3eb11cbeab6eab33b9)
+
+#### [05:34:21 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/5c4d5cb277f58f295bfe12e85dd2affa55aa9cba)
+
+#### [05:34:18 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/1a1a398215822daa679a5753dcdbe62deed92f29)
+
+#### [05:34:17 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/d50b711e098b08711fc481073e3ca8fd4360a5df)
+
+#### [05:34:15 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/c7ca5207a4e7c8a116e9bee097934ee2baccc841)
+
+#### [05:34:12 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/329b1131ae368a6de8eeb64089a5d41c8959feeb)
+
+#### [05:16:10 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/b0433a46916ab861c3aea5b08b70a94df205a9e4)
+
+### Licensing and project metadata
+
+Maintained licensing and related project metadata.
+
+#### [10:34:30 UTC — Maintained project licensing metadata](https://github.com/sandokanCat/.github/commit/d60ebbdd1344ecb9a8278899416308b23e15e7bf)
+
+### Repository maintenance
+
+Performed general repository setup and maintenance.
+
+#### [11:58:52 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/e4d4521eb9a3f67b837cdf9134314a249f71c1d5)
+
+#### [11:47:14 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/86969126fe0530dfdec2e5358a25a9e1f09be99c)
+
+#### [11:35:22 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/c62fd91e4f00df516dc1903851d9e64da544bfa5)
+
+#### [10:28:36 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/d9e0d44370ad5fe8ba50186d88561b70200198b5)
+
+#### [05:34:10 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/41dd7fbc9fcf254335c1e8d7b98ebd8cdd20bdda)
+
+#### [05:34:02 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/3d796a9ac997921a7070692fbb737fefa55925aa)
+
+#### [05:16:32 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/f18a6983ada427bfae2de6beeedfc7d1a8008a3b)
+
+#### [05:16:30 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/61438317175734ed7f8c00f7d41971f65a973167)
+
+#### [05:16:25 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/bc656e8041985a2bb099f0337fb0530ff09ad8d9)
+
+#### [05:16:12 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/cfdc49763d795f0cd0a4c0a5f044ff259e865260)
+
+#### [05:16:08 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/08d67f707b3b46518370e24ec2303e103cad6cd5)
+
+#### [05:16:06 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/0863b8610fc10ae067b1b115b0750d2faebaabdd)
+
+#### [05:16:03 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/c5ec236f46a76dc925d1b687f961615024e7cdde)
+
+## 2026-10-18 (UTC)
+
+### Community infrastructure
+
+Established or refined reusable community-facing repository resources.
+
+#### [16:01:05 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/f1f8cd815d1c73fb8d827a9b9893aa8c2bdf79fb)
+
+### Community and funding metadata
+
+Maintained community support and funding metadata.
+
+#### [21:21:59 UTC — Maintained community funding metadata](https://github.com/sandokanCat/.github/commit/e629e7ad0aa89d81f0ea40c149532bc191265de2)
+
+#### [21:15:18 UTC — Maintained community funding metadata](https://github.com/sandokanCat/.github/commit/7637eeb86bf7ff435be270abbdb2bb4a6f105d0e)
+
+#### [21:14:16 UTC — Maintained community funding metadata](https://github.com/sandokanCat/.github/commit/e8d5a652fd30a5abe1cda785a84909b76bc40079)
+
+#### [21:12:30 UTC — Maintained community funding metadata](https://github.com/sandokanCat/.github/commit/dd186e284deec93826b378084ad3b999a28c6eac)
+
+### Dependency maintenance
+
+Applied or integrated automated dependency maintenance across auxiliary projects.
+
+#### [16:24:56 UTC — Integrated automated dependency maintenance](https://github.com/sandokanCat/.github/commit/bdf2dca689704d56261271d2f43cf5a27538f54d)
+
+#### [13:17:20 UTC — Updated managed dependencies](https://github.com/sandokanCat/.github/commit/8cc8a70c127301000a8d9749975854ec81bcbf1a)
+
+#### [13:14:03 UTC — Integrated automated dependency maintenance](https://github.com/sandokanCat/.github/commit/f24601004ebc6124ab8c701bc719a74a3db0d36f)
+
+#### [12:51:23 UTC — Updated managed dependencies](https://github.com/sandokanCat/.github/commit/5b977f9b7ac7814da86de03265daad5f4ca24c89)
+
+### Repository maintenance
+
+Performed general repository setup and maintenance.
+
+#### [15:59:10 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/cfc3d33a176925ba356001086cbcc12b4c0a6cd2)
+
+#### [12:46:08 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/705f85cd558b262d070c8c385815ef77a8792d4d)
+
+#### [11:49:34 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/df6203477c9d0b19e35de6ab9472306b8989b852)
+
+#### [11:36:27 UTC — Performed repository maintenance](https://github.com/sandokanCat/.github/commit/0e20cd6774e312305211b1cd3aa3e596ea8370df)
+
+## 2026-10-11 (UTC)
+
+### Community and funding metadata
+
+Maintained community support and funding metadata.
+
+#### [17:57:27 UTC — Maintained community funding metadata](https://github.com/sandokanCat/.github/commit/23cd26fe5d67e9f107cfedfa80fe54e73be77979)
+
+## 2026-10-05 (UTC)
+
+### Community infrastructure
+
+Established or refined reusable community-facing repository resources.
+
+#### [16:37:13 UTC — Maintained reusable community resources](https://github.com/sandokanCat/.github/commit/f720acfd2b25c7a90df8698104e1ba2e99a768a3)
+
+### Community and funding metadata
+
+Maintained community support and funding metadata.
+
+#### [16:26:27 UTC — Maintained community funding metadata](https://github.com/sandokanCat/.github/commit/038d5b204ca4b958b0b13f7ae3e784be8b16bcdf)
+
+#### [16:26:11 UTC — Maintained community funding metadata](https://github.com/sandokanCat/.github/commit/6556990c2b31504a90f7576b9eccbfe5cfc565d0)
+
+#### [16:13:03 UTC — Maintained community funding metadata](https://github.com/sandokanCat/.github/commit/752a3377673a3862b62479c5e96db23f383bcb9d)

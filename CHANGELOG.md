@@ -1,80 +1,27 @@
 # Changelog
 
-All notable changes to this repository are documented in this file.
+All notable changes to this project are documented in this file.
 
-This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format. Entries are grouped by commit date; no release versions are implied where no release has been published.
+This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/) and uses [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html). It records notable release changes, not individual commits. For day-to-day activity, see [SUMMARY.md](./SUMMARY.md); for the expanded release record, see [VERSION.md](./VERSION.md).
 
 ## [Unreleased]
 
+## [0.1.0-alpha.1] - 2026-10-24
+
+Initial public prerelease candidate for the reusable AI coding-agent instruction template. This version is anchored to commit [48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d).
+
 ### Added
-- Expanded the AI template with historical and current compatibility entry points for Gemini, Cursor, Windsurf, Zed, Cline, Roo Code, Qwen Code, Kiro, Junie, Goose, Augment, Amazon Q, Continue, Trae, OpenHands, Devin, Warp, Replit, and generic/legacy clients.
-- Added `docs/ai/AGENT_ARCHITECTURE.md` as a detailed compatibility matrix covering CLI, IDE/local, hosted/external, API-harness, nested-directory, and historical-version scenarios.
-- Added alternate common filenames (`AGENT.md`, `CONVENTIONS.md`, `WARP.md`, `replit.md`, `codex.md`, `.rules`) and additional Antigravity/Crush/agent-rules entry points.
-- Added `.claude/CLAUDE.md` for VS Code Local harnesses that discover the nested Claude entry point, and expanded VS Code settings for nested AGENTS.md and Claude Markdown instruction support.
-- Expanded the survey to cover Kilo Code, ZCode Agent, Google Jules, Antigravity, Factory Droid, Kimi Code CLI, Qoder CLI, Grok CLI, Pi, Hermes, and Mastra Code, distinguishing documented native support from provisional reports.
+
+- Prepared a broad set of native and legacy instruction entry points for coding-agent clients, alongside a compatibility matrix covering different products, interfaces, and generations.
 
 ### Changed
-- Kept root `AGENTS.md` as canonical policy while retaining vendor-specific entry points as thin compatibility shims for a reusable template.
-- Added `GEMINI.md` with a native import of `AGENTS.md` for default/older Gemini CLI setups while retaining `.gemini/settings.json` for versions configured to load `AGENTS.md` directly.
-- Added both legacy and modern rule locations for tools whose discovery conventions have changed over time, including Junie's preferred `.junie/AGENTS.md` location.
-- Prepared a legacy Codex fallback and additional common agent entry points without creating `AGENTS.override.md`, which could unintentionally override canonical policy.
-- Documented that textual pointers cannot guarantee host-level context injection, and that every hosted/API/local/CLI surface must be validated independently.
-- Preserved existing Claude plugin settings and Copilot/VS Code configuration while preparing additional native instruction locations.
-- Updated the architecture and changelog to distinguish confirmed native support from version-dependent or unverified compatibility.
 
-### Previously documented
-- Canonical, stack-neutral coding-agent instructions in root `AGENTS.md`, with an on-demand index to relevant documentation under `docs/`.
-- Minimal Claude, Copilot, Gemini, Aider, and VS Code setup and the earlier AI instruction commits; see the repository history for those changes.
+- Established root AGENTS.md as the canonical policy document; vendor- and client-specific entry points are compatibility adapters rather than independent policy copies.
+- Documented that support depends on the client, product surface, version, and actual context-loading behavior. Textual pointers do not guarantee that a host resolves or injects the referenced instructions.
 
-## [2026-10-22]
+### Known limitations
 
-### Added
-- Added the initial `manifest.json` file.
+- Compatibility is not universal or guaranteed. Some reported or emerging integrations remain provisional, and every target client must be checked against its official documentation and tested for effective instruction loading.
 
-## [2026-10-21]
-
-### Added
-- Added the initial VS Code task configuration and root-level license-exception file.
-
-## [2026-10-20]
-
-### Added
-- Added repository-wide documentation placeholders and expanded `SUMMARY.md` into a categorized index of repository files.
-- Added community-health and contribution resources, including issue and discussion templates, a pull request template, support guidance, a code of conduct, security guidance, governance documentation, and code ownership metadata.
-- Added instructions for GitHub Copilot, Claude, Gemini, and compatible coding agents, together with a reusable skill definition.
-- Added MkDocs and Docusaurus configuration files and documentation entry points.
-- Added citation metadata, accessibility guidance, and an EditorConfig file.
-- Added the repository's MIT license.
-- Added root-level placeholders and site metadata mirrored from the CV repository, including sitemap-related files and search-engine verification placeholders.
-
-### Changed
-- Renamed the `skills/` directory to `badges/`.
-- Updated funding configuration and sitemap-related files.
-
-### Removed
-- Removed the root-level `DESIGN.md` file after its initial addition.
-
-## [2026-10-18]
-
-### Added
-- Moved reusable skill assets and VS Code configuration into this shared repository.
-- Added auxiliary files from the RenderCV and GitHub Stats Extended repositories.
-- Added a scheduled/manual upstream synchronization workflow.
-- Added a README documenting archived workflows.
-
-### Changed
-- Updated the Patreon username in the funding configuration.
-- Merged Dependabot updates for Axios and the Python dependency group used by RenderCV.
-
-## [2026-10-11]
-
-### Changed
-- Updated the Patreon username to `sandokanLair`.
-
-## [2026-10-05]
-
-### Added
-- Initialized the repository with default community-health information and funding configuration.
-
-### Changed
-- Moved `FUNDING.yml` into the `.github/` directory so GitHub can use the repository-level funding configuration.
+[Unreleased]: https://github.com/sandokanCat/.github/compare/v0.1.0-alpha.1...HEAD
+[0.1.0-alpha.1]: https://github.com/sandokanCat/.github/releases/tag/v0.1.0-alpha.1
