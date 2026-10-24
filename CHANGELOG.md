@@ -7,16 +7,19 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.
 ## [Unreleased]
 
 ### Added
+- Expanded the AI instruction architecture survey to include Amp, Cursor, Zed, Cline, Roo Code, JetBrains Junie CLI, Kiro, and additional editor/CLI harnesses, with official documentation and guidance on when adapters are unnecessary.
+
+### Changed
+- Clarified that Claude Code v2.1.277+ supports native `AGENTS.md` discovery, but an applicable `CLAUDE.md` can take precedence; retained the tiny import bridge for backward compatibility.
+- Documented that Gemini CLI can use `AGENTS.md` through `.gemini/settings.json` without maintaining `GEMINI.md`.
+- Clarified that Copilot's `.github/copilot-instructions.md` is a native natural-language Markdown format, and that support for `AGENTS.md` differs by product surface.
+- Confirmed that Cursor, Zed, Cline, Roo Code, Junie CLI, and Amp have documented `AGENTS.md` support; no redundant native adapter files were added for these clients.
+- Documented why Kiro and other configurable rule systems do not automatically receive the canonical instructions merely because an adapter links to `AGENTS.md`.
+
+### Previously documented
 - Added a cross-agent instruction architecture reference at `docs/ai/AGENT_ARCHITECTURE.md`, including discovery mechanisms, migration history, official documentation, and validation guidance.
 - Added canonical, stack-neutral coding-agent instructions to root `AGENTS.md`, including an on-demand index for relevant documentation under `docs/`.
 - Recorded the AI instruction setup work from 2026-10-24 that was not previously represented here: [Gemini CLI settings](https://github.com/sandokanCat/.github/commit/ebac9c8d77af3999929ae328d94072b42cc4cb15), [Claude settings](https://github.com/sandokanCat/.github/commit/2f543bba0f7fe96ee130b46f7d58cef213cad712), [Claude import bridge](https://github.com/sandokanCat/.github/commit/f7ed3f6b3bb4464d348878d55d9beec9f7a0de0d), [Copilot adapter](https://github.com/sandokanCat/.github/commit/5e81cbf1ae6cccc2070ac8312bb772acc0070801), [OpenCode adapter](https://github.com/sandokanCat/.github/commit/72f375b05c255c49adca5e1a0a477ac4f0324dcd), and [VS Code settings](https://github.com/sandokanCat/.github/commit/d5708aaeee910d687bf81b5b085e5968dd5cfbdc).
-
-### Changed
-- Configured Gemini CLI to load `AGENTS.md` using documented `context.fileName` setting.
-- Configured Aider to load `AGENTS.md` as read-only context and corrected invalid JSON syntax in VS Code settings.
-- Reduced Claude Code and Copilot instruction files to minimal compatibility bridges pointing to the canonical policy.
-- Removed redundant or empty AI instruction files/configuration that duplicated the source of truth or relied on incorrect discovery assumptions.
-- Updated the `AGENTS.md` documentation index to direct agents to relevant documentation on demand and warn that placeholders may be empty.
 
 ## [2026-10-22]
 
