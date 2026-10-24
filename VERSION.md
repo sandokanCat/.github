@@ -6,7 +6,7 @@
 - **Release type:** prerelease (alpha)
 - **Publication status:** pending
 - **Intended tag target:** [48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d)
-- **Intended release date:** 2026-10-24 (UTC commit date)
+- **Anchor commit date:** 2026-10-24 (UTC commit date)
 - **Versioning scheme:** [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
 
 Do not describe this prerelease as published until the Git tag and GitHub prerelease have been created and verified. Once published, replace the pending status with the verified tag and release URLs. The release must remain anchored to the intended commit even if later documentation-only commits are added to main.

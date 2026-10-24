@@ -17,6 +17,10 @@ This file is the repository's chronological work log. It summarizes work by UTC 
 
 Separated the repository's work log, release-facing history, version record, and durable decisions. The documentation catalog and its navigation were then consolidated and refined.
 
+#### [23:14:04 UTC — Aligned release records and the work log with the publication workflow](https://github.com/sandokanCat/.github/commit/7cae576b9d8fa977328270166cffd9fefd6a1a5b)
+
+Separated the repository's work log, release-facing history, version record, and durable decisions. The documentation catalog and its navigation were then consolidated and refined.
+
 #### [23:13:36 UTC — Refined navigation consistency across the documentation catalog](https://github.com/sandokanCat/.github/commit/b1f92a5059737809760f61fdf5ac75cf4d1e5b2d)
 
 #### [23:13:19 UTC — Consolidated the documentation catalog in the primary index](https://github.com/sandokanCat/.github/commit/f5f10908b0ab05f236ac8518ee8345dd45ccb2e7)

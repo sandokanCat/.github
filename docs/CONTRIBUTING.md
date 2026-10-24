@@ -9,6 +9,18 @@ This repository provides reusable GitHub community-health files, shared reposito
 3. Prefer official primary documentation for external tool behavior. Clearly distinguish documented support from version-dependent, reported, or unverified behavior.
 4. Keep the change minimal and avoid unrelated files. Do not duplicate policies that already have a canonical source.
 
+## GitHub community health files
+
+GitHub's default community health file (CHF) discovery rules are authoritative for filenames and locations. For files that support multiple locations, GitHub checks the `.github/` directory first, then the repository root, then `docs/`. Preserve these supported locations; do not move a CHF into a nested documentation directory merely for organizational consistency.
+
+- Keep default contribution guidance in [`docs/CONTRIBUTING.md`](./CONTRIBUTING.md), a GitHub-supported location for a default community health file.
+- Keep funding and vulnerability-report configuration under [`.github/`](../.github/), as required by GitHub's CHF rules.
+- Keep operational issue and pull request templates in [`.github/ISSUE_TEMPLATE/`](../.github/ISSUE_TEMPLATE/) and [`.github/PULL_REQUEST_TEMPLATE.md`](../.github/PULL_REQUEST_TEMPLATE.md). A documentation page describing a template is not a substitute for the operational template.
+- GitHub recognizes `CODEOWNERS` in the repository root, `.github/`, or `docs/`. The current [`docs/CODEOWNERS`](./CODEOWNERS) file is empty and therefore defines no ownership rules. [`docs/community/CODEOWNERS.md`](./community/CODEOWNERS.md) is explanatory documentation, not a second operational CODEOWNERS file; these files have different purposes and should not be treated as duplicate content.
+- Avoid maintaining duplicate CHF copies. Where GitHub applies location precedence, a higher-priority file can shadow the lower-priority copy.
+
+Official references: [Creating a default community health file](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file), [Setting guidelines for repository contributors](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors), and [About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
+
 ## AI instruction template changes
 
 - Root AGENTS.md is the single source of truth for project-wide coding-agent policy.
