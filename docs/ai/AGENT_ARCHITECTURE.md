@@ -20,10 +20,10 @@ Compatibility is version- and surface-dependent. No repository can guarantee tha
 | Client/tool family | Prepared path(s) | Mechanism and compatibility notes |
 |---|---|---|
 | OpenAI Codex CLI / IDE integrations | `AGENTS.md`, `AGENT.md`, optional `codex.md` fallback | Codex natively discovers `AGENTS.md`; `codex.md` is only relevant when explicitly configured as a fallback. |
-| Claude Code | `CLAUDE.md`, `.claude/settings.json` | `CLAUDE.md` imports `@AGENTS.md`. This covers the long-standing native filename; recent Claude Code versions can also discover AGENTS.md, subject to precedence. The existing plugin settings are preserved as a separate mechanism. |
-| Gemini CLI | `GEMINI.md`, `.gemini/settings.json` | `GEMINI.md` imports `@./AGENTS.md` for default/older behavior. Settings select `AGENTS.md` directly on versions supporting `context.fileName`. |
+| Claude Code | `CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/settings.json` | `CLAUDE.md` imports `@AGENTS.md`. This covers the long-standing native filename; recent Claude Code versions can also discover AGENTS.md, subject to precedence. The existing plugin settings are preserved as a separate mechanism. |
+| Gemini CLI | `GEMINI.md`, `.gemini/settings.json`, `.agents/rules/project.md` | `GEMINI.md` imports `@./AGENTS.md` for default/older behavior. Settings select `AGENTS.md` directly on versions supporting `context.fileName`. |
 | GitHub Copilot (GitHub, IDE, CLI surfaces) | `.github/copilot-instructions.md`, `.github/instructions/project.instructions.md` | Repository-wide and path-scoped instruction formats. Support varies by surface; the short natural-language bridge remains for broad compatibility. |
-| VS Code agent harness | `.vscode/settings.json`, root `AGENTS.md`, Copilot instruction files | Enables AGENTS.md and referenced instructions where supported. These settings do not force every external agent or hosted Copilot surface to use the same loader. |
+| VS Code agent harness | `.vscode/settings.json`, root `AGENTS.md`, Copilot instruction files | Enables root/nested AGENTS.md, Claude Markdown instructions, and referenced instructions for the VS Code Local harness where supported. These settings do not force every external agent or hosted Copilot surface to use the same loader. |
 | Cursor | `AGENTS.md`, `.cursorrules`, `.cursor/rules/project.mdc` | Native AGENTS.md support in current versions; legacy root rule and modern MDC rule formats prepared for older/different workflows. MDC `@AGENTS.md` inclusion depends on Cursor's rule include support. |
 | Windsurf / Cascade / Devin Desktop transitions | `AGENTS.md`, `.windsurfrules`, `.windsurf/rules/project.md`, `.devin/rules/project.md` | Legacy and newer rule entry points are provided. Exact discovery depends on product generation and version; verify loaded rules. |
 | Zed Agent | `AGENTS.md`, `.rules`, and other shared legacy filenames | Zed searches a list of common rule files, including AGENTS.md and legacy Cursor/Windsurf/Cline/Copilot/Claude/Gemini names. External agents and terminal threads have independent loaders. |
@@ -35,7 +35,7 @@ Compatibility is version- and surface-dependent. No repository can guarantee tha
 | Kilo Code | `AGENTS.md`, `AGENT.md` | Native discovery; Kilo documents `AGENT.md` as a fallback and supports legacy `.kilo/rules/` and `.kilocode/rules/` content. No duplicate Kilo rule is needed for general policy. |
 | ZCode Agent | `AGENTS.md` | Native workspace instruction support; it does not expand imports or merge nested AGENTS.md files, so keep essential policy in the root file. |
 | Google Jules | `AGENTS.md` | Repository instructions are supported natively; no separate adapter is needed. |
-| Antigravity | `GEMINI.md`, `AGENTS.md` depending on surface | Keep `GEMINI.md` as the compatibility entry point; Antigravity and Gemini CLI are related products but not interchangeable loaders. |
+| Antigravity | `GEMINI.md`, `AGENTS.md` depending on surface | Keep `GEMINI.md` as the compatibility entry point; Antigravity rules are prepared under `.agents/rules/`; Antigravity and Gemini CLI are related products but not interchangeable loaders. |
 | Factory Droid | `AGENTS.md` | Current harnesses support shared AGENTS.md instructions; verify the specific product/runtime before assuming identical behavior. |
 | Kimi Code CLI | `AGENTS.md` | Reported as a native AGENTS.md client in current tooling; verify the actual version and runtime. |
 | Qoder CLI | `AGENTS.md` | Reported as a native AGENTS.md client in current tooling; verify the actual version and runtime. |

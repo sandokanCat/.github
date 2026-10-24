@@ -10,6 +10,7 @@ This changelog follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.
 - Expanded the AI template with historical and current compatibility entry points for Gemini, Cursor, Windsurf, Zed, Cline, Roo Code, Qwen Code, Kiro, Junie, Goose, Augment, Amazon Q, Continue, Trae, OpenHands, Devin, Warp, Replit, and generic/legacy clients.
 - Added `docs/ai/AGENT_ARCHITECTURE.md` as a detailed compatibility matrix covering CLI, IDE/local, hosted/external, API-harness, nested-directory, and historical-version scenarios.
 - Added alternate common filenames (`AGENT.md`, `CONVENTIONS.md`, `WARP.md`, `replit.md`, `codex.md`, `.rules`) and additional Antigravity/Crush/agent-rules entry points.
+- Added `.claude/CLAUDE.md` for VS Code Local harnesses that discover the nested Claude entry point, and expanded VS Code settings for nested AGENTS.md and Claude Markdown instruction support.
 - Expanded the survey to cover Kilo Code, ZCode Agent, Google Jules, Antigravity, Factory Droid, Kimi Code CLI, Qoder CLI, Grok CLI, Pi, Hermes, and Mastra Code, distinguishing documented native support from provisional reports.
 
 ### Changed

@@ -1,5 +1,7 @@
 {
     "chat.useAgentsMdFile": true,
+    "chat.useNestedAgentsMdFiles": true,
+    "chat.useClaudeMdFile": true,
     "chat.includeReferencedInstructions": true,
 
     "editor.formatOnSave": true,
