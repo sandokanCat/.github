@@ -11,6 +11,14 @@ This file is the repository's chronological work log. It summarizes work by UTC 
 - Add entries for all commits, including maintenance and merge commits. Do not use this file as a substitute for [CHANGELOG.md](../../CHANGELOG.md), which records notable changes by release, or [the decision register](../decisions/DECISIONS.md), which records durable decisions.
 - See [CONTRIBUTING.md](../CONTRIBUTING.md) for maintenance rules and [index.md](../index.md) for the documentation entry point.
 
+## 2026-10-25 (UTC)
+
+### Documentation architecture and repository organisation
+
+Established the precedence rules for file placement and consolidated non-mandatory records into their topic-specific documentation areas while preserving platform entry points.
+
+#### [01:28:18 UTC — chore(docs): reorganize documentation and archive examples](https://github.com/sandokanCat/.github/commit/be9649c52a43153c2b3f76ccb53b8ef920b5ba22)
+
 ## 2026-10-24 (UTC)
 
 ### Documentation and release governance

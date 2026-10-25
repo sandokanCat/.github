@@ -26,10 +26,10 @@ This prerelease packages the initial reusable AI coding-agent instruction templa
 
 - **Prepared version:** 0.1.0-alpha.2
 - **Publication status:** blocked pending verification of v0.1.0-alpha.1
-- **Intended tag target:** `PENDING_FINAL_PREPARATION_COMMIT_SHA`
+- **Intended tag target:** [be9649c52a43153c2b3f76ccb53b8ef920b5ba22](https://github.com/sandokanCat/.github/commit/be9649c52a43153c2b3f76ccb53b8ef920b5ba22)
 - **Scope:** documentation architecture, file placement, archive-directory rename, and reference updates.
 
-Replace the target SHA placeholder in a follow-up documentation commit after the substantive preparation commit exists. Do not publish alpha.2 before alpha.1 is published and verified.
+This target is the substantive preparation commit. Later bookkeeping commits must not be included in the tag target. Do not publish alpha.2 before alpha.1 is published and verified.
 
 ## Release documentation
 

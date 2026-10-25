@@ -8,7 +8,7 @@ This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/)
 
 ## [0.1.0-alpha.2]
 
-Prepared follow-up prerelease; publication is blocked until v0.1.0-alpha.1 has been published and verified. The exact target SHA will be recorded after the substantive preparation commit exists.
+Prepared follow-up prerelease; publication is blocked until v0.1.0-alpha.1 has been published and verified. This prerelease is anchored to [commit be9649c52a43153c2b3f76ccb53b8ef920b5ba22](https://github.com/sandokanCat/.github/commit/be9649c52a43153c2b3f76ccb53b8ef920b5ba22).
 
 ### Changed
 
