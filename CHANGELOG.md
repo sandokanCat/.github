@@ -15,6 +15,7 @@ This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/)
 ### Fixed
 
 - Updated references to relocated documentation and removed obsolete root-level deprecated stubs where canonical same-name documents already exist.
+- Restored `ACCESSIBILITY.md` to GitHub's supported `docs/` location and parked `CHANGES.md` and `SUMMARY.md` under `docs/` while their future purpose is reviewed.
 
 ## [0.1.0-alpha.1] - 2026-10-25
 
