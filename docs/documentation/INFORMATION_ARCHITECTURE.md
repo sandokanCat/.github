@@ -15,6 +15,10 @@ If two platform requirements appear to conflict, verify the current official doc
 
 ## Community Health Files
 
+GitHub's official list of supported default Community Health Files includes `ACCESSIBILITY.md`, and its supported locations include the root, `.github/`, and `docs/`. Do not place it under `docs/<topic>/`. See the [official GitHub guidance](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
+
+
+
 This repository is named `.github` and supplies default community health content to eligible repositories owned by the account. Follow GitHub's official [default community health file guidance](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file). For supported file types, GitHub checks `.github/`, the repository root, and then `docs/`; other CHF types have specific locations. Do not relocate CHF files based only on the topic folders used for explanatory documentation.
 
 Operational templates and configuration belong in their platform-defined locations. Explanatory documentation about a template may live under `docs/`, but is not a substitute for the operational file.
