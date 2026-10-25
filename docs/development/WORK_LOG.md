@@ -17,6 +17,8 @@ This file is the repository's chronological work log. It summarizes work by UTC 
 
 Established the precedence rules for file placement and consolidated non-mandatory records into their topic-specific documentation areas while preserving platform entry points.
 
+#### [01:32:54 UTC — docs(archive): normalize upstream image links](https://github.com/sandokanCat/.github/commit/695aeca53e2d6248d5ca8a4307a53e30288ebfee)
+
 #### [01:31:36 UTC — docs(archive): repair links in retained project examples](https://github.com/sandokanCat/.github/commit/bd9893bfceb13ecc3bb3d85956c9035182690533)
 
 #### [01:28:44 UTC — docs(release): anchor alpha.2 preparation and update work log](https://github.com/sandokanCat/.github/commit/2cc7d923e4db44433b7eeebc9027f57d4eab37ad)
