@@ -64,7 +64,7 @@ Once the extensions are installed and auto-save is configured, follow these step
 
 4. **Start editing**: As you make changes to the YAML file, they will be automatically saved, triggering RenderCV to regenerate the PDF. The PDF viewer will update to show your changes in real-time.
 
-![Live Preview Demonstration](https://raw.githubusercontent.com/rendercv/rendercv/main/docs/assets/images/design_options.gif)
+![Live Preview Demonstration](../../assets/images/design_options.gif)
 
 !!! tip
     You can split your editor vertically by right-clicking on the PDF file tab and selecting "Split Right" or using the keyboard shortcut `Cmd+\` (macOS) or `Ctrl+\` (Windows/Linux).

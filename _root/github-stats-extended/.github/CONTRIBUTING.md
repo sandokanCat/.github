@@ -67,7 +67,7 @@ We have stopped the addition of new themes to decrease maintenance efforts. If y
 
 GitHub-Stats-Extended supports multiple languages. If we are missing your language, you can contribute it! You can check the currently supported languages [here](https://github-stats-extended.vercel.app/frontend/docs/customization/locales/).
 
-To contribute your language you need to edit the [packages/core/src/translations.ts](https://github.com/stats-organization/github-stats-extended/blob/master/packages/core/src/translations.ts) file and add a new property to each object where the key is the language code in [ISO 639-1 standard](https://www.andiamo.co.uk/resources/iso-language-codes/) and the value is the translated string.
+To contribute your language you need to edit the [packages/core/src/translations.ts](../packages/core/src/translations.ts) file and add a new property to each object where the key is the language code in [ISO 639-1 standard](https://www.andiamo.co.uk/resources/iso-language-codes/) and the value is the translated string.
 
 ## Any contributions you make will be under the MIT Software License
 
