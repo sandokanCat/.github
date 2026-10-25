@@ -89,7 +89,7 @@ RenderCV has the same problem. Users write their CVs in YAML, and we want them t
 
 **Solution:** Publish a JSON Schema for RenderCV YAML files.
 
-![JSON Schema of RenderCV](../assets/images/json_schema.gif)
+![JSON Schema of RenderCV](https://raw.githubusercontent.com/rendercv/rendercv/main/docs/assets/images/json_schema.gif)
 
 That's why [`schema.json`](https://github.com/rendercv/rendercv/blob/main/schema.json) exists in the repository.
 
