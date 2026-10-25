@@ -51,6 +51,10 @@ Use topic-specific directories for non-mandatory human-facing material:
 
 Do not create duplicate authoritative records. If a file moves, update links and instructions in the same change. When a legacy root path is retained for compatibility, replace its contents with a short `# Deprecated` notice pointing to the canonical location.
 
+## Reusable templates and configuration examples
+
+Reusable examples that have no platform-defined root location belong under docs/<topic>/templates/, grouped by the domain they configure. For example, site-verification settings belong under docs/identity/templates/. Do not introduce or retain a generic root-level config.ini simply because a project-specific configuration format may be invented later. Keep root configuration files only when the relevant platform, tool, or established convention requires that exact path. When moving a template, update the index and every reference in the same change; delete an obsolete root stub when it has no compatibility purpose.
+
 ## Git ignore and archive caveats
 
 A `.gitignore` rule prevents matching untracked files from being added by ordinary Git operations; it does not remove files already tracked. Renaming a tracked directory to an ignored path still leaves its files in Git history and in the current repository tree. A directory rename also does not, by itself, guarantee that Dependabot or another scanner will ignore its contents. Validate the relevant tool configuration separately.
