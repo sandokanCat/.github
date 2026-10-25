@@ -13,6 +13,34 @@ This file is the repository's chronological work log. It summarizes work by UTC 
 
 ## 2026-10-25 (UTC)
 
+### AI prompt and skill catalogues
+
+Separated reusable prompt and skill catalogues from their templates, documented platform-specific discovery requirements, and removed the superseded nested prompt-template path. Updated contributor guidance and the unreleased changelog.
+
+#### [06:11:18 UTC — docs: record prompt and skill catalogue design](https://github.com/sandokanCat/.github/commit/f7aecad066f8939e50bebb29bfbe882381f6c647)
+
+#### [06:11:14 UTC — docs(ai): document prompt and skill catalogue maintenance](https://github.com/sandokanCat/.github/commit/e8b14f710ceda8f486a79b1ebea1287d6018fbf5)
+
+#### [06:11:09 UTC — docs(ai): distinguish prompt files from agent skills](https://github.com/sandokanCat/.github/commit/fbf592851159cb3cb0c6c91781b2e043858d5880)
+
+#### [06:10:54 UTC — docs(ai): remove relocated prompt template](https://github.com/sandokanCat/.github/commit/bd2ef35820d94954ad863164d8dbce39c0ba6bb8)
+
+#### [06:10:51 UTC — docs: update guidance for parked changes file](https://github.com/sandokanCat/.github/commit/03c48236945b762749f8969f65506cda9d3f2db6)
+
+#### [06:10:47 UTC — docs(ai): update index for prompt and skill catalogues](https://github.com/sandokanCat/.github/commit/cbbdb0421d7e32e6ce6eed4c5c32af92bf6f9264)
+
+#### [06:10:32 UTC — docs(ai): simplify prompt catalogue](https://github.com/sandokanCat/.github/commit/d393ad6699bb08ddbdbfb2dcaeea51f60b5f6fc0)
+
+#### [06:10:29 UTC — docs(ai): add skill catalogue](https://github.com/sandokanCat/.github/commit/31f66755a513a8ba93d6a39a83db84ebd4526d53)
+
+#### [06:10:27 UTC — docs(ai): complete reusable skill template](https://github.com/sandokanCat/.github/commit/d8263dd121f567de1a435a83fe3e249e35cb24f8)
+
+#### [06:10:24 UTC — docs(ai): move prompt template to shared templates](https://github.com/sandokanCat/.github/commit/a3a0a8147a3849c41041b951d26874c3d74dc4bc)
+
+#### [06:09:57 UTC — docs(ai): establish prompt and skill catalogues](https://github.com/sandokanCat/.github/commit/abe1dfe38aee277c7a7d5b0d7396a05dc2a9c3fb)
+
+## 2026-10-25 (UTC)
+
 ### Accessibility and legacy documentation placement
 
 Restored GitHub's supported accessibility-file location and moved the two retired root-level names into docs/ as parked records while their future roles are reconsidered. Updated the documentation index, placement guidance, and decision register.
