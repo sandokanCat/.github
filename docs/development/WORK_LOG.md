@@ -52,7 +52,9 @@ Published and verified the first alpha prerelease; its tag is anchored to the in
 
 ### Repository maintenance
 
-Recorded the archive-restoration maintenance commit for traceability.
+Recorded the archive-restoration maintenance commit for traceability and clarified ignored-path handling.
+
+#### [02:50:00 UTC — actualize .gitignore](https://github.com/sandokanCat/.github/commit/6ed0a21301a247a8be6fb894844829029dc0615b)
 
 #### [02:06:34 UTC — chore(archive): restore archived examples unchanged](https://github.com/sandokanCat/.github/commit/e166b7031c513fa1da6183424883318203a23ba8)
 
