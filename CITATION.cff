@@ -10,14 +10,20 @@ authors:
     email: dev@sandokan.cat
     orcid: "https://orcid.org/0009-0006-5181-5463"
 
-version: 2.1.0
-date-released: "2026-10-24"
-commit: ""
+version: 0.1.0-alpha.1
+date-released: "2026-10-25"
+commit: "48aa0d7082d75138c856e6b2428f9586d38df83d"
 
-abstract: ""
+abstract: >-
+  Account-level default community health files and repository configuration
+  for public GitHub repositories, with reusable coding-agent instruction
+  entry points and supporting documentation.
 keywords:
-  - 
+  - GitHub
+  - community health files
+  - repository configuration
+  - coding agents
+  - software templates
 
 url: "https://sandokan.cat"
 repository-code: "https://github.com/sandokanCat/.github"
-license-url: "https://github.com/sandokanCat/.github/blob/main/LICENSE"
