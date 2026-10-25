@@ -78,7 +78,7 @@ When adding an adapter:
 3. Add the native file only if it improves discovery for a real historical or current client.
 4. Keep the adapter concise. Use a documented import where supported; otherwise say explicitly to read root `AGENTS.md`.
 5. Do not claim a textual pointer guarantees context injection. Verify the client can read workspace files.
-6. Update this matrix and `SUMMARY.md`. Add a `CHANGELOG.md` entry only when the change is notable for a planned or published release; record durable decisions in `docs/decisions/DECISIONS.md`.
+6. Update this matrix and [`WORK_LOG.md`](../development/WORK_LOG.md). Add a `CHANGELOG.md` entry only when the change is notable for a planned or published release; record durable decisions in `docs/decisions/DECISIONS.md`.
 7. Validate JSON/YAML/frontmatter syntax and review every changed path.
 
 ## Official references

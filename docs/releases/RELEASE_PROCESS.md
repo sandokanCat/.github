@@ -1,14 +1,16 @@
 # Release process
 
-This document defines the minimal release workflow for this repository. See [tagging conventions](./TAGGING.md), the [release checklist](./RELEASE_CHECKLIST.md), [CHANGELOG.md](../../CHANGELOG.md), and [VERSION.md](../../VERSION.md).
+This document defines the minimal release workflow for this repository. See [tagging conventions](./TAGGING.md), the [release checklist](./RELEASE_CHECKLIST.md), [CHANGELOG.md](../../CHANGELOG.md), and [VERSION.md](./VERSION.md).
 
 ## 1. Prepare the release
 
 1. Decide the version using [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html). Use a prerelease identifier such as -alpha.1 while compatibility or scope remains preliminary.
 2. Confirm the intended release commit and inspect its complete diff. The tag must point to that exact commit.
 3. Update CHANGELOG.md with only notable user-facing changes. Keep [Unreleased] at the top. A prepared version section may omit its date while publication is pending; add the actual publication date to the version heading after the GitHub Release is published.
-4. Update VERSION.md with the intended version, scope, limitations, and status. Do not claim publication yet.
+4. Update [VERSION.md](./VERSION.md) with the intended version, scope, limitations, and status. Do not claim publication yet.
 5. Verify links, syntax, and the release scope. Follow the [release checklist](./RELEASE_CHECKLIST.md).
+
+If the available GitHub integration cannot create tags or releases, complete these steps through GitHub's release interface. Documentation preparation alone does not constitute publication.
 
 ## 2. Create the immutable tag and GitHub release
 
@@ -23,5 +25,5 @@ Official references: [About releases](https://docs.github.com/en/repositories/re
 
 1. Update VERSION.md to reflect the verified published state and link to the release.
 2. Keep follow-up documentation changes on the default branch without moving the published tag.
-3. Add new work to SUMMARY.md as commits land. Add changes to CHANGELOG.md only when they are notable for a future release.
+3. Add new work to [WORK_LOG.md](../development/WORK_LOG.md) as commits land. Add changes to CHANGELOG.md only when they are notable for a future release.
 4. When preparing the next release, move the accumulated [Unreleased] entries into a new version section and leave a fresh [Unreleased] section at the top.

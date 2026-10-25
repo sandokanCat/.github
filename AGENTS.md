@@ -53,6 +53,7 @@ Read only documentation relevant to the task; do not bulk-load every document. S
 - Design system, UX, accessibility, and internationalization: `docs/design/`, `docs/policies/`, and relevant `docs/product/` documents.
 - Decisions and proposals: `docs/adr/`, `docs/decisions/`, and `docs/rfcs/`.
 - Contribution, support, governance, licensing, and vulnerability reporting: relevant files in `docs/` and repository-root community-health files.
-- Documentation structure and maintenance: `docs/documentation/` and `docs/index.md`.
+- Release status and version scope: `docs/releases/VERSION.md`; chronological work log: `docs/development/WORK_LOG.md`.
+- Documentation structure and file-placement precedence: `docs/documentation/INFORMATION_ARCHITECTURE.md`, `docs/documentation/DOCS_ARCHITECTURE.md`, and `docs/index.md`.
 
 When a relevant document is empty, missing, stale, or contradictory, do not infer its intended contents. Use verified code and configuration, report the gap, and update documentation only when within scope.

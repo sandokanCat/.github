@@ -1,5 +1,7 @@
 # BLOCKED
+# Archive and local-only paths beginning with an underscore. This does not untrack existing files.
 _*
+_root/
 .htaccess
 
 # ALLOWED

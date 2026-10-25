@@ -2,9 +2,23 @@
 
 All notable changes to this project are documented in this file.
 
-This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/) and uses [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html). It records notable release changes, not individual commits. For day-to-day activity, see [SUMMARY.md](./SUMMARY.md); for the expanded release record, see [VERSION.md](./VERSION.md).
+This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/) and uses [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html). It records notable release changes, not individual commits. For day-to-day activity, see [WORK_LOG.md](./docs/development/WORK_LOG.md); for the expanded release record, see [VERSION.md](./docs/releases/VERSION.md).
 
 ## [Unreleased]
+
+## [0.1.0-alpha.2]
+
+Prepared follow-up prerelease; publication is blocked until v0.1.0-alpha.1 has been published and verified. The exact target SHA will be recorded after the substantive preparation commit exists.
+
+### Changed
+
+- Established a file-placement hierarchy that preserves platform-required entry points before applying industry and local conventions.
+- Moved non-mandatory records into topic-specific documentation areas while preserving root-level GitHub and coding-agent entry points.
+- Renamed the retained project examples archive from root/ to _root/ and updated repository guidance.
+
+### Fixed
+
+- Updated internal references to relocated records and clarified the difference between Git ignore rules and tracked content.
 
 ## [0.1.0-alpha.1]
 
@@ -23,5 +37,6 @@ Prepared prerelease; publication is pending. Once the GitHub prerelease is publi
 
 - Compatibility is not universal or guaranteed. Some reported or emerging integrations remain provisional, and every target client must be checked against its official documentation and tested for effective instruction loading.
 
-[Unreleased]: https://github.com/sandokanCat/.github/compare/v0.1.0-alpha.1...HEAD
+[Unreleased]: https://github.com/sandokanCat/.github/compare/v0.1.0-alpha.2...HEAD
+[0.1.0-alpha.2]: https://github.com/sandokanCat/.github/releases/tag/v0.1.0-alpha.2
 [0.1.0-alpha.1]: https://github.com/sandokanCat/.github/releases/tag/v0.1.0-alpha.1

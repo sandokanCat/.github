@@ -7,7 +7,7 @@ This repository uses [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.
 - Stable release: vMAJOR.MINOR.PATCH, for example v1.2.3.
 - Prerelease: vMAJOR.MINOR.PATCH-IDENTIFIER, for example v0.1.0-alpha.1.
 - Use lowercase prerelease identifiers such as alpha, beta, and rc; use numeric suffixes to distinguish iterations.
-- Keep the leading v in Git tags. The version recorded in CHANGELOG.md and VERSION.md omits that prefix.
+- Keep the leading v in Git tags. The version recorded in CHANGELOG.md and [VERSION.md](./VERSION.md) omits that prefix.
 
 ## Target and immutability
 
@@ -19,4 +19,4 @@ This repository uses [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.
 
 ## First planned prerelease
 
-The initial AI-template prerelease is planned as v0.1.0-alpha.1, anchored to [commit 48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d). Publication remains pending until the tag and GitHub Release are created and verified. See the [release process](./RELEASE_PROCESS.md).
+The initial AI-template prerelease is planned as v0.1.0-alpha.1, anchored to [commit 48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d). Publication remains pending until the tag and GitHub Release are created and verified. The follow-up v0.1.0-alpha.2 is reserved for the documentation and repository-layout work; do not publish it before alpha.1 is verified. Its target SHA must be filled in after the substantive preparation commit exists. See the [release process](./RELEASE_PROCESS.md).

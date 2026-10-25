@@ -26,17 +26,19 @@ Official references: [Creating a default community health file](https://docs.git
 - Root AGENTS.md is the single source of truth for project-wide coding-agent policy.
 - Vendor/client entry points should be short compatibility adapters. Use a documented native import when supported; otherwise make the limitation explicit and direct the client to the canonical file.
 - Never claim that a pointer guarantees host-level context loading. Check product, surface, and version independently.
-- When changing compatibility claims, update [docs/ai/AGENT_ARCHITECTURE.md](./ai/AGENT_ARCHITECTURE.md) and [SUMMARY.md](../SUMMARY.md). Add a [CHANGELOG.md](../CHANGELOG.md) entry only when the change is notable for a planned or published release.
+- When changing compatibility claims, update [docs/ai/AGENT_ARCHITECTURE.md](./ai/AGENT_ARCHITECTURE.md) and [WORK_LOG.md](./development/WORK_LOG.md). Add a [CHANGELOG.md](../CHANGELOG.md) entry only when the change is notable for a planned or published release.
 - Record durable decisions and rationale in the [decision register](./decisions/DECISIONS.md), linking to detailed policy documents instead of copying them.
 
 ## Documentation record conventions
 
+Follow [INFORMATION_ARCHITECTURE.md](./documentation/INFORMATION_ARCHITECTURE.md): platform requirements take precedence over industry conventions, which take precedence over repository conventions; personal preferences apply only where none of those prescribe a location.
+
 Maintain these files according to their distinct purposes:
 
-- [docs/index.md](./index.md): concise entry point to populated, authoritative documentation and key repository records. Keep links valid; do not present empty placeholders as completed guidance.
-- [SUMMARY.md](../SUMMARY.md): all commits, grouped first by UTC date (YYYY-MM-DD), then by logical change type, and then newest to oldest by 24-hour UTC time (HH:mm:ss UTC). Each commit entry must link to its GitHub commit. Include a short group-level summary, but do not copy commit subjects, authors, or file-level diff details into the prose.
+- [index.md](./index.md): concise entry point to populated, authoritative documentation and key repository records. Keep links valid; do not present empty placeholders as completed guidance.
+- [WORK_LOG.md](./development/WORK_LOG.md): all commits, grouped first by UTC date (YYYY-MM-DD), then by logical change type, and then newest to oldest by 24-hour UTC time (HH:mm:ss UTC). Each commit entry must link to its GitHub commit. Include a short group-level summary, but do not copy commit subjects, authors, or file-level diff details into the prose.
 - [CHANGELOG.md](../CHANGELOG.md): user-facing, notable changes by version. Follow [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/), keep [Unreleased] at the top, use the six standard change types when applicable, and list versions newest first. Do not turn it into a commit log.
-- [VERSION.md](../VERSION.md): expanded scope, status, compatibility notes, and links for the current release or prerelease. Never mark a release as published until its tag and GitHub release are verified.
+- [VERSION.md](./releases/VERSION.md): expanded scope, status, compatibility notes, and links for the current release or prerelease. Never mark a release as published until its tag and GitHub release are verified.
 - [docs/decisions/DECISIONS.md](./decisions/DECISIONS.md): durable decisions in descending ISO 8601 date order. Record rationale and consequences, not a chronology of file edits.
 - [CHANGES.md](../CHANGES.md): deprecated; do not add content. Use the decision register instead.
 

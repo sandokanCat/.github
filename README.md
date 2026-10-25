@@ -5,3 +5,5 @@ Default community health files and repository configuration for
 
 These files provide account-wide defaults for supported GitHub community
 health features.
+
+Documentation: [docs/index.md](docs/index.md).

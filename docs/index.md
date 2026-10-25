@@ -4,13 +4,15 @@ This is the repository's catalogued documentation index. The repository is a reu
 
 ## Primary entry points
 
+- [INFORMATION_ARCHITECTURE.md](./documentation/INFORMATION_ARCHITECTURE.md) — placement precedence and root-file requirements.
+
 - [README.md](../README.md) — repository purpose and scope.
 - [AGENTS.md](../AGENTS.md) — project-wide instructions for coding agents.
 - [AGENT_ARCHITECTURE.md](./ai/AGENT_ARCHITECTURE.md) — compatibility model, discovery caveats, and adapter policy.
-- `Contribution guide` — contribution workflow and documentation conventions.
-- [SUMMARY.md](../SUMMARY.md) — commit work log grouped by UTC date and logical type.
+- [CONTRIBUTING.md](./CONTRIBUTING.md) — contribution workflow and documentation conventions.
+- [WORK_LOG.md](./development/WORK_LOG.md) — commit work log grouped by UTC date and logical type.
 - [CHANGELOG.md](../CHANGELOG.md) — notable changes by release.
-- [VERSION.md](../VERSION.md) — current release or prerelease scope and status.
+- [VERSION.md](./releases/VERSION.md) — current release or prerelease scope and status.
 - [DECISIONS.md](./decisions/DECISIONS.md) — durable team decisions.
 - [RELEASE_PROCESS.md](./releases/RELEASE_PROCESS.md) — release preparation and publication.
 - [TAGGING.md](./releases/TAGGING.md) — version tags and immutable release anchors.
@@ -20,25 +22,26 @@ This is the repository's catalogued documentation index. The repository is a reu
 
 ## 1. Project identity, introduction and status
 
+- [site-verification.ini](./identity/templates/site-verification.ini) — illustrative site-verification settings; not an active secret store.
+
 - [OVERVIEW.md](./identity/OVERVIEW.md) – Overview of the system, its objectives and components.
 - [ABOUT.md](./identity/ABOUT.md) – Background information on the project.
 - [PROJECT.md](./identity/PROJECT.md) – Description of the scope, purpose and limitations.
 - [PROJECT_STATUS.md](./identity/PROJECT_STATUS.md) – Current status, roadblocks and maintenance status.
-- [CHANGELOG.md](../CHANGELOG.md) — Curated release changelog following Keep a Changelog.
 - [CHANGES.md](../CHANGES.md) — Deprecated; use the [DECISIONS.md](./decisions/DECISIONS.md).
 - [RELEASE_NOTES.md](./releases/RELEASE_NOTES.md) – What’s new in a specific version.
 - [ROADMAP.md](./identity/ROADMAP.md) – Planned features and future priorities.
 - [FAQ.md](./identity/FAQ.md) – Frequently asked questions.
-- [AUTHORS.md](../AUTHORS.md) – Main authors.
-- [CONTRIBUTORS.md](../CONTRIBUTORS.md) – People who have contributed to the project.
+- [AUTHORS.md](./community/AUTHORS.md) – Main authors.
+- [CONTRIBUTORS.md](./community/CONTRIBUTORS.md) – People who have contributed to the project.
 - [ACKNOWLEDGMENTS.md](./identity/ACKNOWLEDGMENTS.md) – Acknowledgements and additional credits.
-- [CITATION.md](../CITATION.md) – Instructions for citing the software.
+- [CITATION.md](./legal/CITATION.md) – Instructions for citing the software.
 - [CITATION.cff](../CITATION.cff) – Structured citation metadata.
-- [LICENSE.md](../LICENSE.md) – Licence text or explanation.
+- [LICENSE.md](./legal/LICENSE.md) – Licence text or explanation.
 - [COPYRIGHT.md](./identity/COPYRIGHT.md) – Copyright notices and conditions.
 - [DISCLAIMER.md](./identity/DISCLAIMER.md) – Limitations of liability and warnings.
-- [NOTICE.md](../NOTICE.md) – Legal notices or third-party attributions.
-- [VERSION.md](../VERSION.md) — Expanded record of the current release or prerelease.
+- [NOTICE.md](./legal/NOTICE.md) – Legal notices or third-party attributions.
+- [VERSION.md](./releases/VERSION.md) — Expanded record of the current release or prerelease.
 
 ## 2. Community, collaboration and contributions
 
@@ -357,7 +360,7 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [GEMINI.md](../GEMINI.md) – Context and instructions for Gemini CLI.
 - [copilot-instructions.md](../.github/copilot-instructions.md) – General GitHub Copilot instructions for the repository.
 - [project.instructions.md](../.github/instructions/project.instructions.md) – Copilot instructions with a specific scope based on your configuration (representative placeholder for the documented filename pattern).
-- [SKILL.md](../SKILL.md) – Defines a reusable skill for specific agents.
+- [SKILL.md](./ai/templates/SKILL.md) – Defines a reusable skill for specific agents.
 - [PROMPT.md](./ai/PROMPT.md) – Reusable prompt or instructions for a task.
 - [PROMPTS.md](../prompts/PROMPTS.md) – Catalogue of prompts.
 - [AI_GUIDELINES.md](./ai/AI_GUIDELINES.md) – Guidelines for using AI in the project.
