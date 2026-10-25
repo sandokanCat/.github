@@ -363,9 +363,11 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [copilot-instructions.md](../.github/copilot-instructions.md) – General GitHub Copilot instructions for the repository.
 - [project.instructions.md](../.github/instructions/project.instructions.md) – Copilot instructions with a specific scope based on your configuration (representative placeholder for the documented filename pattern).
 - [SKILLS.md](./ai/SKILLS.md) — Catalogue of skills; none are currently published.
+- [skills/NOTES.md](./ai/skills/NOTES.md) — Planned skills directory structure and conventions.
 - [SKILL.md](./ai/templates/SKILL.md) — Template for creating an Agent Skill; not an active skill.
 - [PROMPT.md](./ai/templates/PROMPT.md) – Template for a reusable prompt; not an active prompt.
 - [PROMPTS.md](./ai/PROMPTS.md) – Catalogue of reusable prompts.
+- [prompts/NOTES.md](./ai/prompts/NOTES.md) – Planned prompt directory structure and conventions.
 - [AI_GUIDELINES.md](./ai/AI_GUIDELINES.md) – Guidelines for using AI in the project.
 - [AI_POLICY.md](./ai/AI_POLICY.md) – AI usage policy.
 - [CONTEXT.md](./ai/CONTEXT.md) – Context of an agent or automated process.
