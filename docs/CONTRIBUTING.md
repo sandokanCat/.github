@@ -23,6 +23,9 @@ Official references: [Creating a default community health file](https://docs.git
 
 ## AI instruction template changes
 
+- Maintain the prompt catalogue in [PROMPTS.md](./ai/PROMPTS.md) and the skills catalogue in [SKILLS.md](./ai/SKILLS.md). Keep their entries distinct from templates, and do not claim automatic discovery for files stored under `docs/ai/`.
+- Use `docs/ai/templates/PROMPT.md` as the generic prompt-writing reference and `docs/ai/templates/SKILL.md` as the Agent Skills reference. For target-specific runnable prompt files, follow the target platform's supported extension and discovery path; for portable skills, follow the Agent Skills specification.
+
 - Root AGENTS.md is the single source of truth for project-wide coding-agent policy.
 - Vendor/client entry points should be short compatibility adapters. Use a documented native import when supported; otherwise make the limitation explicit and direct the client to the canonical file.
 - Never claim that a pointer guarantees host-level context loading. Check product, surface, and version independently.
