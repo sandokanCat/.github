@@ -10,7 +10,9 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [AGENTS.md](../AGENTS.md) — project-wide instructions for coding agents.
 - [AGENT_ARCHITECTURE.md](./ai/AGENT_ARCHITECTURE.md) — compatibility model, discovery caveats, and adapter policy.
 - [CONTRIBUTING.md](./CONTRIBUTING.md) — contribution workflow and documentation conventions.
-- [WORK_LOG.md](./development/WORK_LOG.md) — commit work log grouped by UTC date and logical type.
+- [WORK_LOG.md](./development/WORK_LOG.md) — repository-defined commit work log grouped by UTC date and logical type.
+- [CHANGES.md](./CHANGES.md) — parked legacy filename; not an active changelog.
+- [SUMMARY.md](./SUMMARY.md) — parked legacy filename; not the documentation index.
 - [CHANGELOG.md](../CHANGELOG.md) — notable changes by release.
 - [VERSION.md](./releases/VERSION.md) — current release or prerelease scope and status.
 - [DECISIONS.md](./decisions/DECISIONS.md) — durable team decisions.
@@ -28,7 +30,7 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [ABOUT.md](./identity/ABOUT.md) – Background information on the project.
 - [PROJECT.md](./identity/PROJECT.md) – Description of the scope, purpose and limitations.
 - [PROJECT_STATUS.md](./identity/PROJECT_STATUS.md) – Current status, roadblocks and maintenance status.
-- [CHANGES.md](../CHANGES.md) — Deprecated; use the [DECISIONS.md](./decisions/DECISIONS.md).
+- [CHANGES.md](./CHANGES.md) — Parked legacy filename; future purpose under review.
 - [RELEASE_NOTES.md](./releases/RELEASE_NOTES.md) – What’s new in a specific version.
 - [ROADMAP.md](./identity/ROADMAP.md) – Planned features and future priorities.
 - [FAQ.md](./identity/FAQ.md) – Frequently asked questions.
@@ -259,7 +261,7 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [GLOSSARY_OF_TERMS.md](./guides/GLOSSARY_OF_TERMS.md) – Comprehensive technical glossary.
 - [FAQ_DEVELOPERS.md](./development/FAQ_DEVELOPERS.md) – Frequently asked questions for developers.
 - [FAQ_USERS.md](./user-guide/FAQ_USERS.md) – Frequently asked questions for users.
-- [ACCESSIBILITY.md](./policies/ACCESSIBILITY.md) – Accessibility guide or criteria for accessible use.
+- [ACCESSIBILITY.md](./ACCESSIBILITY.md) – Accessibility guide or criteria for accessible use.
 - `LOCALISATION.md` – How to add languages and translate the application.
 - [TRANSLATION.md](./guides/TRANSLATION.md) – Translation workflow and string management.
 
