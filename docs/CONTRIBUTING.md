@@ -31,7 +31,7 @@ Official references: [Creating a default community health file](https://docs.git
 
 ## Documentation record conventions
 
-Follow [INFORMATION_ARCHITECTURE.md](./documentation/INFORMATION_ARCHITECTURE.md): platform requirements take precedence over industry conventions, which take precedence over repository conventions; personal preferences apply only where none of those prescribe a location.
+Follow [INFORMATION_ARCHITECTURE.md](./documentation/INFORMATION_ARCHITECTURE.md): platform requirements take precedence over industry conventions, which take precedence over repository conventions; personal preferences apply only where none of those prescribe a location. Reusable configuration examples and templates belong under docs/<topic>/templates/ unless an ecosystem requires a specific discovery path.
 
 Maintain these files according to their distinct purposes:
 
@@ -40,7 +40,7 @@ Maintain these files according to their distinct purposes:
 - [CHANGELOG.md](../CHANGELOG.md): user-facing, notable changes by version. Follow [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/), keep [Unreleased] at the top, use the six standard change types when applicable, and list versions newest first. Do not turn it into a commit log.
 - [VERSION.md](./releases/VERSION.md): expanded scope, status, compatibility notes, and links for the current release or prerelease. Never mark a release as published until its tag and GitHub release are verified.
 - [docs/decisions/DECISIONS.md](./decisions/DECISIONS.md): durable decisions in descending ISO 8601 date order. Record rationale and consequences, not a chronology of file edits.
-- [CHANGES.md](../CHANGES.md): deprecated; do not add content. Use the decision register instead.
+- [CHANGES.md](../CHANGES.md): deprecated legacy entry point; do not add content. Keep it only while no canonical same-name replacement is maintained elsewhere. Use the decision register for durable decisions and the work log for commit history.
 
 ## Release and tag workflow
 
