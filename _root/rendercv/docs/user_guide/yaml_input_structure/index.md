@@ -35,7 +35,7 @@ Explore the detailed documentation for each field:
 
 To maximize your productivity while editing the input YAML file, set up RenderCV's JSON Schema in your IDE. It will validate your inputs on the fly and give auto-complete suggestions.
 
-![JSON Schema in action](../https://raw.githubusercontent.com/rendercv/rendercv/main/docs/assets/images/json_schema.gif)
+![JSON Schema in action](https://raw.githubusercontent.com/rendercv/rendercv/main/docs/assets/images/json_schema.gif)
 
 === "Visual Studio Code"
 
