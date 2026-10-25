@@ -34,7 +34,7 @@ Official references: [Creating a default community health file](https://docs.git
 
 ## Documentation record conventions
 
-Follow [INFORMATION_ARCHITECTURE.md](./documentation/INFORMATION_ARCHITECTURE.md): platform requirements take precedence over industry conventions, which take precedence over repository conventions; personal preferences apply only where none of those prescribe a location. Reusable configuration examples and templates belong under docs/<topic>/templates/ unless an ecosystem requires a specific discovery path.
+Follow [INFORMATION_ARCHITECTURE.md](./documentation/INFORMATION_ARCHITECTURE.md): platform requirements take precedence over industry conventions, which take precedence over repository conventions; personal preferences apply only where none of those prescribe a location. Reusable configuration examples and templates belong under docs/<topic>/templates/ unless an ecosystem requires a specific discovery path. **When creating a directory that must remain empty for now, add a `NOTES.md` inside it** explaining its intended purpose, planned architecture, examples, relevant constraints, and the conditions for adding real files. Treat this as a planning note, not as a substitute for the eventual catalogue or operational files. Keep it current as the plan evolves.
 
 Maintain these files according to their distinct purposes:
 
