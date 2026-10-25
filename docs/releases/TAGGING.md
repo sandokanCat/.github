@@ -17,6 +17,8 @@ This repository uses [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.
 - The GitHub Release must use the same tag and indicate prerelease status consistently with the version.
 - Documentation commits added after a release tag do not change the contents of that release.
 
-## First planned prerelease
+## First prerelease and subsequent work
 
-The initial AI-template prerelease is planned as v0.1.0-alpha.1, anchored to [commit 48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d). Publication remains pending until the tag and GitHub Release are created and verified. The follow-up v0.1.0-alpha.2 is reserved for the documentation and repository-layout work; do not publish it before alpha.1 is verified. Its intended target is [commit 695aeca53e2d6248d5ca8a4307a53e30288ebfee](https://github.com/sandokanCat/.github/commit/695aeca53e2d6248d5ca8a4307a53e30288ebfee). See the [release process](./RELEASE_PROCESS.md).
+The initial AI-template prerelease, [v0.1.0-alpha.1](https://github.com/sandokanCat/.github/releases/tag/v0.1.0-alpha.1), was published on 2026-10-25 and its tag is verified against [commit 48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d). Later documentation changes on main do not alter that release.
+
+The next candidate, v0.1.0-alpha.2, is still in progress. No target commit is approved. Do not create or publish that tag until the scope is complete, the entire diff is audited, and the release checklist passes. In particular, do not modify files under `_root/`. See the [release process](./RELEASE_PROCESS.md).
