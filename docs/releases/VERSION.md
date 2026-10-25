@@ -2,14 +2,15 @@
 
 ## Current release status
 
-- **Prepared version:** 0.1.0-alpha.1
+- **Published version:** 0.1.0-alpha.1
 - **Release type:** prerelease (alpha)
-- **Publication status:** pending
+- **Publication status:** published and verified
 - **Intended tag target:** [48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d)
+- **Publication timestamp:** 2026-10-25 02:20:25 UTC
 - **Anchor commit date:** 2026-10-24 (UTC commit date)
 - **Versioning scheme:** [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
 
-Do not describe this prerelease as published until the Git tag and GitHub prerelease have been created and verified. Once published, replace the pending status with the verified tag and release URLs. The release must remain anchored to the intended commit even if later documentation-only commits are added to main.
+Verified Git tag: [v0.1.0-alpha.1](https://github.com/sandokanCat/.github/releases/tag/v0.1.0-alpha.1). The tag resolves directly to the intended commit. Later documentation-only commits on main do not change this immutable release anchor.
 
 ## Scope
 
@@ -25,11 +26,11 @@ This prerelease packages the initial reusable AI coding-agent instruction templa
 ## Next prepared prerelease
 
 - **Prepared version:** 0.1.0-alpha.2
-- **Publication status:** blocked pending verification of v0.1.0-alpha.1
-- **Intended tag target:** [695aeca53e2d6248d5ca8a4307a53e30288ebfee](https://github.com/sandokanCat/.github/commit/695aeca53e2d6248d5ca8a4307a53e30288ebfee)
+- **Publication status:** blocked pending review of the archive-content baseline and selection of a clean tag target
+- **Intended tag target:** not yet approved
 - **Scope:** documentation architecture, file placement, archive-directory rename, and reference updates.
 
-This target is the substantive preparation commit. Later bookkeeping commits must not be included in the tag target. Do not publish alpha.2 before alpha.1 is published and verified.
+The previously proposed target included changes to files under `_root/`, which must remain untouched. Do not publish alpha.2 until the target commit is audited and approved.
 
 ## Release documentation
 

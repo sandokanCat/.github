@@ -8,7 +8,7 @@ This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/)
 
 ## [0.1.0-alpha.2]
 
-Prepared follow-up prerelease; publication is blocked until v0.1.0-alpha.1 has been published and verified. This prerelease is anchored to [commit 695aeca53e2d6248d5ca8a4307a53e30288ebfee](https://github.com/sandokanCat/.github/commit/695aeca53e2d6248d5ca8a4307a53e30288ebfee).
+Prepared follow-up prerelease; publication remains blocked while the archive-content baseline and a clean tag target are reviewed. The previous candidate target is not approved for release.
 
 ### Changed
 
@@ -20,9 +20,9 @@ Prepared follow-up prerelease; publication is blocked until v0.1.0-alpha.1 has b
 
 - Updated internal references to relocated records and clarified the difference between Git ignore rules and tracked content.
 
-## [0.1.0-alpha.1]
+## [0.1.0-alpha.1] - 2026-10-25
 
-Prepared prerelease; publication is pending. Once the GitHub prerelease is published, add its publication date to this heading. This version is anchored to commit [48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d).
+Published on GitHub at 2026-10-25 02:20:25 UTC as an immutable prerelease. The tag points directly to commit [48aa0d7082d75138c856e6b2428f9586d38df83d](https://github.com/sandokanCat/.github/commit/48aa0d7082d75138c856e6b2428f9586d38df83d).
 
 ### Added
 
@@ -37,6 +37,5 @@ Prepared prerelease; publication is pending. Once the GitHub prerelease is publi
 
 - Compatibility is not universal or guaranteed. Some reported or emerging integrations remain provisional, and every target client must be checked against its official documentation and tested for effective instruction loading.
 
-[Unreleased]: https://github.com/sandokanCat/.github/compare/v0.1.0-alpha.2...HEAD
-[0.1.0-alpha.2]: https://github.com/sandokanCat/.github/releases/tag/v0.1.0-alpha.2
+[Unreleased]: https://github.com/sandokanCat/.github/compare/v0.1.0-alpha.1...HEAD
 [0.1.0-alpha.1]: https://github.com/sandokanCat/.github/releases/tag/v0.1.0-alpha.1

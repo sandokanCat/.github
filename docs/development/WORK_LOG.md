@@ -13,6 +13,16 @@ This file is the repository's chronological work log. It summarizes work by UTC 
 
 ## 2026-10-25 (UTC)
 
+### Release publication
+
+Published and verified the first alpha prerelease; its tag is anchored to the intended AI-instruction compatibility commit.
+
+### Repository maintenance
+
+Recorded the archive-restoration maintenance commit for traceability.
+
+#### [02:06:34 UTC — chore(archive): restore archived examples unchanged](https://github.com/sandokanCat/.github/commit/e166b7031c513fa1da6183424883318203a23ba8)
+
 ### Documentation architecture and repository organisation
 
 Established the precedence rules for file placement and consolidated non-mandatory records into their topic-specific documentation areas while preserving platform entry points.
