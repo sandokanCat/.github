@@ -111,3 +111,11 @@ When adding an adapter:
 ## Scope and limitations
 
 This is a compatibility template, not a guarantee of universal discovery. Tool support changes quickly, and a model is not the same thing as its client. Where official documentation does not clearly guarantee a path, the matrix says so rather than inventing certainty. For a project, copy only the adapters needed by the target tools and versions, then test the effective instruction context.
+
+
+## Prompt files and agent skills are different extension mechanisms
+
+- Use [PROMPTS.md](./PROMPTS.md) to catalogue reusable task prompts. A prompt is typically invoked explicitly and its filename/format depends on the target client. For VS Code/GitHub Copilot prompt files, use the documented `.prompt.md` suffix and the supported discovery location (commonly `.github/prompts/` for a workspace). Files under `docs/ai/prompts/` are a documentation catalogue and are not automatically discovered by that path.
+- Use [SKILLS.md](./SKILLS.md) to catalogue reusable agent skills. Follow the open [Agent Skills specification](https://agentskills.io/specification): a skill is a directory containing `SKILL.md` with required metadata, including `name` and `description`; the directory name must match the skill name. Supporting files are optional and should be added only when needed.
+- Keep reference templates in [`templates/`](./templates/), outside the collections of maintained prompts and skills, so a generic template is not mistaken for a runnable item.
+- Repository catalogue paths are not universal discovery paths. Before claiming runtime compatibility, follow the target client's current official documentation and test it.
