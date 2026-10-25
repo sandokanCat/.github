@@ -38,6 +38,10 @@ Do not invent a task-management system merely because empty template filenames e
 
 The repository contains empty documentation placeholders. A listed path is not an active policy until it has useful content. Do not infer requirements from empty files, and do not populate them merely to make the catalog look complete. Keep the index honest about which documents are implemented and which are planned.
 
+## Planned empty directories
+
+Do not leave a required future directory unexplained. Add a `NOTES.md` within it to record purpose, expected structure, examples, constraints, and next steps. Mark planned content as planned, and keep the note aligned with the relevant catalogue. Remove or revise the planning note when the directory becomes active; do not let it become a duplicate index.
+
 ## File-placement precedence
 
 Follow [INFORMATION_ARCHITECTURE.md](./INFORMATION_ARCHITECTURE.md). Platform requirements and discovery rules outrank industry conventions; industry conventions outrank repository layout preferences; personal preferences apply only when no higher-priority rule prescribes a location.
