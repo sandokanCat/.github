@@ -40,7 +40,7 @@ Maintain these files according to their distinct purposes:
 - [CHANGELOG.md](../CHANGELOG.md): user-facing, notable changes by version. Follow [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/), keep [Unreleased] at the top, use the six standard change types when applicable, and list versions newest first. Do not turn it into a commit log.
 - [VERSION.md](./releases/VERSION.md): expanded scope, status, compatibility notes, and links for the current release or prerelease. Never mark a release as published until its tag and GitHub release are verified.
 - [docs/decisions/DECISIONS.md](./decisions/DECISIONS.md): durable decisions in descending ISO 8601 date order. Record rationale and consequences, not a chronology of file edits.
-- [CHANGES.md](../CHANGES.md): deprecated legacy entry point; do not add content. Keep it only while no canonical same-name replacement is maintained elsewhere. Use the decision register for durable decisions and the work log for commit history.
+- [CHANGES.md](./CHANGES.md): parked legacy filename under review; not an active change log. Use the root [CHANGELOG.md](../CHANGELOG.md) for notable release changes, the work log for commit history, and the decision register for durable decisions.
 
 ## Release and tag workflow
 
