@@ -10,7 +10,7 @@ This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/)
 
 - Clarified the file-placement hierarchy, keeping platform-required entry points ahead of industry conventions and repository preferences.
 - Continued reorganizing non-mandatory documentation while preserving root-level GitHub and coding-agent entry points.
-- Began consolidating prompt documentation under docs/ai/ and moving reusable configuration templates to topic-specific template directories.
+- Consolidated AI prompt and skill catalogues under `docs/ai/`, separated reusable templates from runnable items, and documented the difference between generic repository paths and platform-specific discovery locations.
 
 ### Fixed
 
