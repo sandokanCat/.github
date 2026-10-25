@@ -1,13 +1,23 @@
 # Prompt catalogue
 
-Reusable prompts are organized under `docs/ai/prompts/`, with one directory per prompt and a canonical `PROMPT.md` inside each directory:
+This file indexes reusable task prompts maintained in this repository. A catalogue entry is not a guarantee that a given client discovers or executes the prompt automatically.
 
-`docs/ai/prompts/<slug>/PROMPT.md`
+## Format and location
 
-Add every maintained prompt to this index. Each entry should identify its purpose and link to the canonical prompt file. Keep shared AI policy in the root `AGENTS.md`; individual prompts should define task-specific inputs, constraints, and expected outputs rather than duplicate repository-wide policy.
+Use descriptive filenames under `docs/ai/prompts/`. When targeting VS Code or GitHub Copilot prompt-file conventions, use the `.prompt.md` suffix and the target product's required discovery location and frontmatter. For a general cross-tool prompt, document its intended target and any adaptations needed rather than assuming universal compatibility.
 
-## Available records
+Start with a flat collection:
 
-- [Prompt record template](./prompts/template/PROMPT.md) — starting structure for adding a reusable prompt.
+```text
+docs/ai/prompts/<descriptive-name>.prompt.md
+```
 
-No task-specific prompt records have been published yet.
+Give a prompt its own directory only when it needs supporting files or examples; do not add topic-directory nesting without a concrete reason.
+
+## Available prompts
+
+No task-specific prompts have been published yet.
+
+## Template
+
+- [Reusable prompt template](./templates/PROMPT.md) — a reference template, not an active prompt.
