@@ -17,7 +17,7 @@ This document records durable project and team decisions, not a file-by-file cha
 **Status:** Accepted
 
 **Decision:** Keep distinct records for distinct purposes:
-- [WORK_LOG.md](../development/WORK_LOG.md) is the complete, high-level commit work log, grouped by UTC date and logical type, with a link for every commit.
+- [WORK_LOG.md](../development/WORK_LOG.md) is this repository's own documented convention for a complete, high-level commit work log, grouped by UTC date and logical type, with a link for every commit. It is not a universally mandated repository filename or a replacement for Git history.
 - [CHANGELOG.md](../../CHANGELOG.md) is a curated record of notable changes by release, following Keep a Changelog.
 - [VERSION.md](../releases/VERSION.md) describes the current release or prerelease in more detail.
 - This file records durable decisions and their rationale.
@@ -26,3 +26,14 @@ This document records durable project and team decisions, not a file-by-file cha
 **Rationale:** A commit log, a release changelog, a release description, and a decision register answer different questions. Combining them creates duplicated content and makes the release changelog less useful.
 
 **Consequences:** Update only the record whose purpose matches the change. A single change may be summarized in more than one place only when each summary serves a distinct audience and purpose.
+
+
+## 2026-10-25 — Preserve GitHub's supported accessibility file location
+
+**Status:** Accepted
+
+**Decision:** Keep the default `ACCESSIBILITY.md` at `docs/ACCESSIBILITY.md`. GitHub explicitly lists this as a supported location for a default community health file. Do not move it into a topic-specific subdirectory, even if that would otherwise be tidy.
+
+**Rationale:** Platform discovery requirements take precedence over the repository's preferred documentation taxonomy.
+
+**Consequences:** The documentation index must link to `docs/ACCESSIBILITY.md`; the file may be empty while still a placeholder, but its location must remain compatible with GitHub.
