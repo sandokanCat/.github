@@ -362,7 +362,7 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [GEMINI.md](../GEMINI.md) – Context and instructions for Gemini CLI.
 - [copilot-instructions.md](../.github/copilot-instructions.md) – General GitHub Copilot instructions for the repository.
 - [project.instructions.md](../.github/instructions/project.instructions.md) – Copilot instructions with a specific scope based on your configuration (representative placeholder for the documented filename pattern).
-- [SKILL.md](./ai/templates/SKILL.md) – Defines a reusable skill for specific agents.
+- [SKILL.md](./ai/templates/SKILL.md) — Placeholder for a future skill template; not an active, discoverable agent skill.
 - [PROMPT.md](./ai/prompts/template/PROMPT.md) – Reusable prompt or instructions for a task.
 - [PROMPTS.md](./ai/PROMPTS.md) – Catalogue of prompts.
 - [AI_GUIDELINES.md](./ai/AI_GUIDELINES.md) – Guidelines for using AI in the project.
