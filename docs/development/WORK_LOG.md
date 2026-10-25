@@ -13,6 +13,36 @@ This file is the repository's chronological work log. It summarizes work by UTC 
 
 ## 2026-10-25 (UTC)
 
+### Accessibility and legacy documentation placement
+
+Restored GitHub's supported accessibility-file location and moved the two retired root-level names into docs/ as parked records while their future roles are reconsidered. Updated the documentation index, placement guidance, and decision register.
+
+#### [05:14:29 UTC — docs: record accessibility and legacy-file placement](https://github.com/sandokanCat/.github/commit/e38bca847e956af155117581d8d8084e9aa7a695)
+
+#### [05:14:25 UTC — docs(architecture): document accessibility discovery requirement](https://github.com/sandokanCat/.github/commit/7cec0e03dd92b816644511518e636b950b7a9c3b)
+
+#### [05:14:22 UTC — docs(decisions): clarify work log convention and accessibility path](https://github.com/sandokanCat/.github/commit/7326d142809fba7326c3d086d64628cf30e7bc96)
+
+#### [05:14:19 UTC — docs: restore index links for accessibility and parked records](https://github.com/sandokanCat/.github/commit/cc5ba9627d4baf3c8ca02fb3101f2c8a7a1c6a17)
+
+#### [05:14:10 UTC — docs: park legacy summary record for review](https://github.com/sandokanCat/.github/commit/4a2f3ee0d893ae2f90b9970cd901cd3a37248e98)
+
+#### [05:14:07 UTC — docs: park legacy changes record for review](https://github.com/sandokanCat/.github/commit/0ea0153cab020b68679a50552c10b10d0e4ef8fa)
+
+#### [05:13:37 UTC — docs: relocate legacy summary marker](https://github.com/sandokanCat/.github/commit/23aca4934ec10b24ba808d7f72f4651ed66b83ab)
+
+#### [05:13:35 UTC — docs: park legacy summary marker under docs](https://github.com/sandokanCat/.github/commit/1d15e8001916aa2bf2400b1a7309cc1958cff5e4)
+
+#### [05:13:31 UTC — docs: relocate legacy changes marker](https://github.com/sandokanCat/.github/commit/14d886b83416a175f3ac76423e7d7bb3834f90a8)
+
+#### [05:13:29 UTC — docs: park legacy changes marker under docs](https://github.com/sandokanCat/.github/commit/dcfa4807596c228a252aafbe73ad5cee279b95e1)
+
+#### [05:13:26 UTC — docs(github): remove unsupported accessibility path](https://github.com/sandokanCat/.github/commit/663d3d110f5e9b9ee79329b26e67a87564df3a4c)
+
+#### [05:13:24 UTC — docs(github): restore recognized accessibility page path](https://github.com/sandokanCat/.github/commit/601315f254e91219c9d10ba8584603e55394eb64)
+
+## 2026-10-25 (UTC)
+
 ### Documentation cleanup, prompt catalogue, and citation metadata
 
 Aligned the citation record with the published alpha, documented the Zenodo DOI workflow, consolidated prompt discovery under docs/ai/, and removed deprecated root paths that duplicated canonical same-name documents. Relocated empty documentation placeholders to their topic directories.
