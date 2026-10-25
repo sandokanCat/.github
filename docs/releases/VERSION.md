@@ -23,14 +23,14 @@ This prerelease packages the initial reusable AI coding-agent instruction templa
 - Validate the effective instruction context in each target client before relying on it.
 - Emerging or insufficiently documented integrations remain provisional.
 
-## Next prepared prerelease
+## Next release under consideration
 
-- **Prepared version:** 0.1.0-alpha.2
-- **Publication status:** blocked pending review of the archive-content baseline and selection of a clean tag target
-- **Intended tag target:** not yet approved
-- **Scope:** documentation architecture, file placement, archive-directory rename, and reference updates.
+- **Candidate version:** 0.1.0-alpha.2
+- **Status:** work in progress; scope and tag target are not final
+- **Intended tag target:** not selected
+- **Scope under review:** documentation architecture, root-file cleanup, prompt organization, citation metadata, and release archival workflow.
 
-The previously proposed target included changes to files under `_root/`, which must remain untouched. Do not publish alpha.2 until the target commit is audited and approved.
+Do not treat alpha.2 as prepared or publishable yet. Before selecting a target, audit the complete diff and ensure no files under `_root/` are modified.
 
 ## Release documentation
 
