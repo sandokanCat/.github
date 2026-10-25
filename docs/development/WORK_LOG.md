@@ -13,6 +13,39 @@ This file is the repository's chronological work log. It summarizes work by UTC 
 
 ## 2026-10-25 (UTC)
 
+### Documentation cleanup, prompt catalogue, and citation metadata
+
+Aligned the citation record with the published alpha, documented the Zenodo DOI workflow, consolidated prompt discovery under docs/ai/, and removed deprecated root paths that duplicated canonical same-name documents. Relocated empty documentation placeholders to their topic directories.
+
+#### [03:52:21 UTC — docs: remove relocated placeholder](https://github.com/sandokanCat/.github/commit/d8f656d9e0530f77e208879628ca9cee54844419)
+#### [03:52:18 UTC — docs: relocate empty documentation placeholder](https://github.com/sandokanCat/.github/commit/a885489c85990403e9eb9b2b08d76bdac316dd9b)
+#### [03:52:16 UTC — docs: remove relocated placeholder](https://github.com/sandokanCat/.github/commit/6c96528fcf1c68f793c6545c263be4b6e1318295)
+#### [03:52:13 UTC — docs: relocate empty documentation placeholder](https://github.com/sandokanCat/.github/commit/923492723cd5073311fe1c3e5cb2a147f61b1f8d)
+#### [03:52:11 UTC — docs: remove relocated placeholder](https://github.com/sandokanCat/.github/commit/fb0637736b5c7dd092d2b7379175aa466c4fee97)
+#### [03:52:09 UTC — docs: relocate empty documentation placeholder](https://github.com/sandokanCat/.github/commit/d8429b1f4613312c73525c32e9891eeae579fc9e)
+#### [03:52:04 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/8126a3fdaa91d4ca524e7d8065ebb28fadebc6a1)
+#### [03:52:01 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/f719727300105ef55d4df0e821bdc98efc4a642e)
+#### [03:51:58 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/e1de76fd1b60237b9f0878521e855d7dd2127e42)
+#### [03:51:56 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/e343c2d76cfc1ef79fb9fb20c19626f11292de25)
+#### [03:51:53 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/99d2de120cc33b6102baa1f4fc2df624fa08a890)
+#### [03:51:51 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/000d25bed3ac0a752df9c5e8128fb25832eaaba6)
+#### [03:51:48 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/9045f9c5feedb7392f202e38caadedbd6ec812ea)
+#### [03:51:46 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/7f41282392764c7fb9e00d09fa7a7e929f48c735)
+#### [03:51:44 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/9a6c729258d7fdc543893d449e0210e98044bd23)
+#### [03:51:41 UTC — chore(docs): remove obsolete legacy path](https://github.com/sandokanCat/.github/commit/f23e82c0a9dead289e7df092774831b8f8758326)
+#### [03:51:24 UTC — docs(release): document Zenodo DOI verification](https://github.com/sandokanCat/.github/commit/3842426a30828082803b7c46eeb5f574b7ce1227)
+#### [03:51:19 UTC — docs(release): correct published alpha status](https://github.com/sandokanCat/.github/commit/98e3930f00010ae367fc165befbabb0ec9f3a3c6)
+#### [03:51:12 UTC — docs(release): mark alpha.2 as unfinished work](https://github.com/sandokanCat/.github/commit/5dd53e4868876c14277b722a65a63da5adb9d893)
+#### [03:51:06 UTC — docs(ai): add prompt catalogue and template](https://github.com/sandokanCat/.github/commit/8afb046376d7bfa95f8340b02e1a3e8cc32b344f)
+#### [03:51:04 UTC — docs(ai): add prompt catalogue and template](https://github.com/sandokanCat/.github/commit/c8f9910c3f7752b18bbd5e59fb2e70b2d3617983)
+#### [03:50:58 UTC — docs: update index for prompt and topic locations](https://github.com/sandokanCat/.github/commit/62d637d9a581ef4b63318f626bb1458253075cb6)
+#### [03:50:52 UTC — docs: move unfinished alpha.2 notes to unreleased](https://github.com/sandokanCat/.github/commit/109965076b8b07fc772408ba494c25cfaa739f65)
+#### [03:50:31 UTC — docs: define reusable template placement](https://github.com/sandokanCat/.github/commit/0285e7c2831e227ffabf290261c68462b767eb39)
+#### [03:50:29 UTC — docs: define reusable template placement](https://github.com/sandokanCat/.github/commit/c29d79508af734974cb5db6665437000fd43f26a)
+#### [03:50:26 UTC — docs: define reusable template placement](https://github.com/sandokanCat/.github/commit/c31c5e8dd4d4b3051581f5e0cc13c66fce185043)
+#### [03:50:23 UTC — docs(citation): align metadata with alpha.1](https://github.com/sandokanCat/.github/commit/dc710b6f97b708fb22eacf2e14ad21a7c23dc1fa)
+#### [03:50:11 UTC — docs(citation): document Zenodo DOI handling](https://github.com/sandokanCat/.github/commit/647961f8a3dd872863653ce9460a9ac7c1c6e202)
+
 ### Release publication
 
 Published and verified the first alpha prerelease; its tag is anchored to the intended AI-instruction compatibility commit.
