@@ -6,19 +6,15 @@ This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/)
 
 ## [Unreleased]
 
-## [0.1.0-alpha.2]
-
-Prepared follow-up prerelease; publication remains blocked while the archive-content baseline and a clean tag target are reviewed. The previous candidate target is not approved for release.
-
 ### Changed
 
-- Established a file-placement hierarchy that preserves platform-required entry points before applying industry and local conventions.
-- Moved non-mandatory records into topic-specific documentation areas while preserving root-level GitHub and coding-agent entry points.
-- Renamed the retained project examples archive from root/ to _root/ and updated repository guidance.
+- Clarified the file-placement hierarchy, keeping platform-required entry points ahead of industry conventions and repository preferences.
+- Continued reorganizing non-mandatory documentation while preserving root-level GitHub and coding-agent entry points.
+- Began consolidating prompt documentation under docs/ai/ and moving reusable configuration templates to topic-specific template directories.
 
 ### Fixed
 
-- Updated internal references to relocated records and clarified the difference between Git ignore rules and tracked content.
+- Updated references to relocated documentation and removed obsolete root-level deprecated stubs where canonical same-name documents already exist.
 
 ## [0.1.0-alpha.1] - 2026-10-25
 
