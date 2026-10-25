@@ -49,7 +49,7 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) – Rules of conduct and handling of breaches.
 - [SUPPORT.md](./SUPPORT.md) – Channels for obtaining support.
 - [SECURITY.md](./SECURITY.md) – Security policy and vulnerability reporting.
-- [GOVERNANCE.md](./GOVERNANCE.md) – Governance and decision-making model.
+- [GOVERNANCE.md](./community/GOVERNANCE.md) – Governance and decision-making model.
 - [MAINTAINERS.md](./community/MAINTAINERS.md) – Maintenance leads and their roles.
 - [COMMUNITY.md](./community/COMMUNITY.md) – Resources and guidelines for participating in the community.
 - [ONBOARDING.md](./development/ONBOARDING.md) – Onboarding new contributors.
@@ -58,7 +58,7 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [FUNDING.md](./community/FUNDING.md) – Explains how to support the project financially.
 - [CODEOWNERS.md](./community/CODEOWNERS.md) – Explanation of the code ownership system.
 - [PULL_REQUEST_TEMPLATE.md](../.github/PULL_REQUEST_TEMPLATE.md) – Explains or supplements the process for submitting pull requests.
-- [ISSUE_TEMPLATE.md](./ISSUE_TEMPLATE.md) – General documentation or template for issues.
+- [ISSUE_TEMPLATE.md](./community/ISSUE_TEMPLATE.md) – General documentation or template for issues.
 
 ## 3. Installation, configuration and getting started
 
@@ -259,7 +259,7 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [GLOSSARY_OF_TERMS.md](./guides/GLOSSARY_OF_TERMS.md) – Comprehensive technical glossary.
 - [FAQ_DEVELOPERS.md](./development/FAQ_DEVELOPERS.md) – Frequently asked questions for developers.
 - [FAQ_USERS.md](./user-guide/FAQ_USERS.md) – Frequently asked questions for users.
-- [ACCESSIBILITY.md](./ACCESSIBILITY.md) – Accessibility guide or criteria for accessible use.
+- [ACCESSIBILITY.md](./policies/ACCESSIBILITY.md) – Accessibility guide or criteria for accessible use.
 - `LOCALISATION.md` – How to add languages and translate the application.
 - [TRANSLATION.md](./guides/TRANSLATION.md) – Translation workflow and string management.
 
@@ -361,8 +361,8 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [copilot-instructions.md](../.github/copilot-instructions.md) – General GitHub Copilot instructions for the repository.
 - [project.instructions.md](../.github/instructions/project.instructions.md) – Copilot instructions with a specific scope based on your configuration (representative placeholder for the documented filename pattern).
 - [SKILL.md](./ai/templates/SKILL.md) – Defines a reusable skill for specific agents.
-- [PROMPT.md](./ai/PROMPT.md) – Reusable prompt or instructions for a task.
-- [PROMPTS.md](../prompts/PROMPTS.md) – Catalogue of prompts.
+- [PROMPT.md](./ai/prompts/template/PROMPT.md) – Reusable prompt or instructions for a task.
+- [PROMPTS.md](./ai/PROMPTS.md) – Catalogue of prompts.
 - [AI_GUIDELINES.md](./ai/AI_GUIDELINES.md) – Guidelines for using AI in the project.
 - [AI_POLICY.md](./ai/AI_POLICY.md) – AI usage policy.
 - [CONTEXT.md](./ai/CONTEXT.md) – Context of an agent or automated process.
