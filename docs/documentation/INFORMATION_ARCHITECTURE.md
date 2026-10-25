@@ -55,6 +55,10 @@ Use topic-specific directories for non-mandatory human-facing material:
 
 Do not create duplicate authoritative records. If a file moves, update links and instructions in the same change. When a legacy root path is retained for compatibility, replace its contents with a short `# Deprecated` notice pointing to the canonical location.
 
+## Planned empty directories
+
+When a future directory is needed before its first operational or content file is ready, create a `NOTES.md` inside that directory rather than leaving an undocumented empty folder. Explain the directory's purpose, intended structure, likely file types, examples, platform-specific discovery constraints, and the conditions for adding real content. Clearly mark the directory as planned; do not imply that examples are already implemented. For example, `docs/ai/prompts/NOTES.md` and `docs/ai/skills/NOTES.md` describe planned collections. Link the note from the relevant catalogue or index where appropriate, and update or replace it when real content arrives. Avoid duplicating the full catalogue in `NOTES.md`.
+
 ## Reusable templates and configuration examples
 
 Reusable examples that have no platform-defined root location belong under docs/<topic>/templates/, grouped by the domain they configure. For example, site-verification settings belong under docs/identity/templates/. Do not introduce or retain a generic root-level config.ini simply because a project-specific configuration format may be invented later. Keep root configuration files only when the relevant platform, tool, or established convention requires that exact path. When moving a template, update the index and every reference in the same change; delete an obsolete root stub when it has no compatibility purpose.
