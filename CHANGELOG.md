@@ -12,7 +12,7 @@ This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/)
 - Continued reorganizing non-mandatory documentation while preserving root-level GitHub and coding-agent entry points.
 - Consolidated AI prompt and skill catalogues under `docs/ai/`, separated reusable templates from runnable items, and documented the difference between generic repository paths and platform-specific discovery locations.
 - Established a `NOTES.md` convention for planned directories, including their purpose, intended architecture, examples, constraints, and activation criteria.
-- Established `.github/CODEOWNERS` as the single operational ownership file, assigning repository-wide ownership to `@sandokanCat` and documenting the need for branch rules to enforce approvals.
+- Established `docs/CODEOWNERS` as the single operational ownership file by repository convention, with explicit ownership rules for all three GitHub-supported CODEOWNERS paths and documentation of GitHub's location precedence and the need for branch rules to enforce approvals.
 
 ### Fixed
 
