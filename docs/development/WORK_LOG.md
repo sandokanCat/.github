@@ -11,6 +11,44 @@ This file is the repository's chronological work log. It summarizes work by UTC 
 - Add entries for all commits, including maintenance and merge commits. Do not use this file as a substitute for [CHANGELOG.md](../../CHANGELOG.md), which records notable changes by release, or [the decision register](../decisions/DECISIONS.md), which records durable decisions.
 - See [CONTRIBUTING.md](../CONTRIBUTING.md) for maintenance rules and [index.md](../index.md) for the documentation entry point.
 
+## 2026-10-27 (UTC)
+
+### CODEOWNERS location and ownership guidance
+
+Aligned the operational ownership file and related documentation with the repository's preferred organisational order (`docs/`, `.github/`, root), while preserving the distinction between that preference and GitHub's technical lookup precedence. Removed the shadowing operational copy, documented enforcement limits, and clarified the canonical link.
+
+#### [16:40:49 UTC — docs: clarify CODEOWNERS organisation preference](https://github.com/sandokanCat/.github/commit/a6089b66a94ccb32d67dedb8212082cad8c28d83)
+
+#### [16:40:04 UTC — docs: align CODEOWNERS location preference](https://github.com/sandokanCat/.github/commit/95abdd09b5e0c85a091f82e7be7b4241d36909d5)
+
+#### [16:39:59 UTC — docs: align CODEOWNERS location preference](https://github.com/sandokanCat/.github/commit/ee2808e992dfe861cc6e08271392640090989b50)
+
+#### [16:39:56 UTC — docs: align CODEOWNERS location preference](https://github.com/sandokanCat/.github/commit/7262771b7d8aaa58068ac0ddd886cdd37c4c7436)
+
+#### [16:39:53 UTC — docs: align CODEOWNERS location preference](https://github.com/sandokanCat/.github/commit/6e47c44022359a7dc83a91d0dc734f32810bb380)
+
+#### [16:39:36 UTC — chore: order CODEOWNERS paths by repository preference](https://github.com/sandokanCat/.github/commit/8016d90f8d7873d8c5a10002bb8d968552eef8a0)
+
+#### [16:35:10 UTC — docs: record preferred CODEOWNERS location](https://github.com/sandokanCat/.github/commit/73a3b93f943bfeb953c29b891b27f3df180ec8db)
+
+#### [16:35:04 UTC — chore: keep single CODEOWNERS file in docs](https://github.com/sandokanCat/.github/commit/069d2dbc741edd7b2587253ffa1bd0840516123b)
+
+#### [16:34:49 UTC — docs: document preferred CODEOWNERS location and limits](https://github.com/sandokanCat/.github/commit/919885f9451f7a8c323885f3e165c1ee83e9abc8)
+
+#### [16:34:38 UTC — chore: restore preferred CODEOWNERS location](https://github.com/sandokanCat/.github/commit/18ef54302800eb379c33428d9a7a46455bc4a49e)
+
+#### [16:25:28 UTC — docs: explain code ownership and review enforcement](https://github.com/sandokanCat/.github/commit/14ddf4c827b834ea57616f101e86deb908f0105a)
+
+#### [16:25:09 UTC — docs: record repository ownership rules](https://github.com/sandokanCat/.github/commit/d44a0a85e1f534fa68909071241299b5915f6832)
+
+#### [16:25:01 UTC — chore: remove shadowed CODEOWNERS placeholder](https://github.com/sandokanCat/.github/commit/c78fa292559a169be6d40429098bbb95501e6e92)
+
+#### [16:24:58 UTC — docs: link operational CODEOWNERS location](https://github.com/sandokanCat/.github/commit/05b60ae391ca593d841136b72c6556f19a3001b4)
+
+#### [16:24:54 UTC — docs: document CODEOWNERS placement and enforcement limits](https://github.com/sandokanCat/.github/commit/4511c802e4641f4c8d6503a3c7b1983b44712c1f)
+
+#### [16:24:32 UTC — chore: prioritize repository code ownership rules](https://github.com/sandokanCat/.github/commit/2363408f291dd2470d808a34bd7faad514515f6d)
+
 ## 2026-10-25 (UTC)
 
 ### AI prompt and skill catalogues
