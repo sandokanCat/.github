@@ -12,7 +12,7 @@ This file follows [Keep a Changelog 2.0.0](https://keepachangelog.com/en/2.0.0/)
 - Continued reorganizing non-mandatory documentation while preserving root-level GitHub and coding-agent entry points.
 - Consolidated AI prompt and skill catalogues under `docs/ai/`, separated reusable templates from runnable items, and documented the difference between generic repository paths and platform-specific discovery locations.
 - Established a `NOTES.md` convention for planned directories, including their purpose, intended architecture, examples, constraints, and activation criteria.
-- Established `docs/CODEOWNERS` as the single operational ownership file, following the repository's preferred organisation order (`docs/`, `.github/`, root) while documenting GitHub's distinct technical lookup precedence and the need for branch rules to enforce approvals.
+- Established the general file-placement rule `docs/ > .github/ > root`, using higher-priority platform locations only when required; documented file-specific exceptions separately.
 
 ### Fixed
 
