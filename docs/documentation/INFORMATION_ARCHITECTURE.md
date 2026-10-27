@@ -13,6 +13,10 @@ Apply the following hierarchy in order:
 
 If two platform requirements appear to conflict, verify the current official documentation for each affected platform and preserve both entry points when necessary. Do not assume that similarly named files serve the same function.
 
+## General repository placement rule
+
+Prefer `docs/` first, `.github/` second, and the repository root last: `docs/ > .github/ > root`. Use `docs/` for a file whenever the relevant platform recognises it there. Use `.github/` only when the platform or integration requires it or when `docs/` is not a supported location; use the root only when neither preferred location is supported or the platform specifically requires the root. This is a general rule for all recognised file types, not just documentation. Document a file-specific exception at the point where that file's requirements are explained; do not enumerate ordinary files that follow this rule.
+
 ## Community Health Files
 
 GitHub's official list of supported default Community Health Files includes `ACCESSIBILITY.md`, and its supported locations include the root, `.github/`, and `docs/`. Do not place it under `docs/<topic>/`. See the [official GitHub guidance](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
@@ -23,7 +27,7 @@ This repository is named `.github` and supplies default community health content
 
 Operational templates and configuration belong in their platform-defined locations. Explanatory documentation about a template may live under `docs/`, but is not a substitute for the operational file.
 
-Keep the canonical operational `CODEOWNERS` file at `docs/CODEOWNERS`, following the repository's preferred organisational order: `docs/`, `.github/`, then root. Its wildcard assigns the repository to `@sandokanCat`; explicit rules are listed in the same preferred order: `/docs/CODEOWNERS`, `/.github/CODEOWNERS`, `/CODEOWNERS`. This is an organisational choice only. GitHub's technical selection precedence is `.github/CODEOWNERS`, root `CODEOWNERS`, then `docs/CODEOWNERS`, regardless of the order of rules inside the file. Rules inside `docs/CODEOWNERS` cannot stop a higher-priority file from shadowing it. Keep a single operational copy. `CODEOWNERS` alone does not enforce approval or prevent direct changes; configure branch protection or a ruleset requiring code-owner review, and review bypass permissions, if enforcement is needed.
+The operational `CODEOWNERS` file is maintained at `docs/CODEOWNERS`. GitHub's technical selection precedence is `.github/CODEOWNERS`, root `CODEOWNERS`, then `docs/CODEOWNERS`; rules in the selected file cannot prevent a higher-priority copy from shadowing it. Keep a single operational copy. `CODEOWNERS` alone does not enforce approval or prevent direct changes; configure branch protection or a ruleset requiring code-owner review, and review bypass permissions, if enforcement is needed. This is a file-specific platform exception; the general placement rule above remains authoritative for other files.
 
 ## Coding-agent entry points
 
