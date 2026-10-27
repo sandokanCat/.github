@@ -23,6 +23,8 @@ This repository is named `.github` and supplies default community health content
 
 Operational templates and configuration belong in their platform-defined locations. Explanatory documentation about a template may live under `docs/`, but is not a substitute for the operational file.
 
+Keep the operational `CODEOWNERS` file at `.github/CODEOWNERS`, GitHub's highest-priority supported location. The current wildcard assigns the repository to `@sandokanCat`, while an explicit `/.github/CODEOWNERS` rule documents ownership of the policy file itself. Do not keep competing operational copies in the root or `docs/`. `CODEOWNERS` alone does not enforce approval or prevent direct changes; configure branch protection or a ruleset requiring code-owner review, and review bypass permissions, if enforcement is needed.
+
 ## Coding-agent entry points
 
 Root `AGENTS.md` is the canonical project-wide instruction source. Preserve it and any vendor/client entry points whose names or paths are required for discovery or backward compatibility. See [AGENT_ARCHITECTURE.md](../ai/AGENT_ARCHITECTURE.md). An adapter is not redundant merely because a newer client supports another filename.
