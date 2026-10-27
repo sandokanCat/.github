@@ -44,4 +44,4 @@ Do not leave a required future directory unexplained. Add a `NOTES.md` within it
 
 ## File-placement precedence
 
-Follow [INFORMATION_ARCHITECTURE.md](./INFORMATION_ARCHITECTURE.md). Platform requirements and discovery rules outrank industry conventions; industry conventions outrank repository layout preferences; personal preferences apply only when no higher-priority rule prescribes a location.
+Follow [INFORMATION_ARCHITECTURE.md](./INFORMATION_ARCHITECTURE.md) for the single authoritative file-placement rule and its exceptions. Do not restate that policy here.
