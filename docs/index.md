@@ -466,4 +466,4 @@ This is the repository's catalogued documentation index. The repository is a reu
 - [q-a.yml](../.github/DISCUSSION_TEMPLATE/q-a.yml) – Template for questions and answers.
 - [VULNERABILITY_REPORT.yml](../.github/VULNERABILITY_REPORT.yml) – Existing placeholder for vulnerability-reporting configuration.
 - [FUNDING.yml](../.github/FUNDING.yml) – Sponsor and funding links.
-- [CODEOWNERS](./CODEOWNERS) – Operational repository-wide code ownership rules.
+- [CODEOWNERS](./CODEOWNERS) – Operational repository-wide code ownership rules (preferred location: `docs/`; GitHub lookup precedence differs).
