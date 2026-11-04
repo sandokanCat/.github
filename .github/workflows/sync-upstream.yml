@@ -1,9 +1,12 @@
 name: Sync upstream
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "0 0 * * *"
 
 permissions:
   contents: write
@@ -25,18 +28,17 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Fetch upstream and merge safely
+      - name: Fetch upstream and create verified merge
+        env:
+          GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git remote add upstream https://github.com/exampleUser/exampleRepo.git
 
-          git fetch origin main
-          git fetch upstream main
+          git fetch --no-tags origin main
+          git fetch --no-tags upstream main
 
           git checkout -B main refs/remotes/origin/main
 
@@ -45,6 +47,114 @@ jobs:
             exit 0
           fi
 
-          git merge --no-edit refs/remotes/upstream/main
+          BASE_SHA=$(git rev-parse HEAD)
+          UPSTREAM_SHA=$(git rev-parse refs/remotes/upstream/main)
 
-          git push origin HEAD:refs/heads/main
+          MERGE_STATUS=0
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              merge --no-commit --no-ff "$UPSTREAM_SHA" || MERGE_STATUS=$?
+
+          if [[ "$MERGE_STATUS" -ne 0 ]]; then
+            UNMERGED_PATHS=$(git diff --name-only --diff-filter=U)
+
+            if [[ -z "$UNMERGED_PATHS" ]] || grep -qv '^\.github/workflows/' <<< "$UNMERGED_PATHS"; then
+              echo "::error::Upstream merge has conflicts outside .github/workflows/ or failed for another reason."
+              exit 1
+            fi
+          fi
+
+          git restore --source="$BASE_SHA" --staged --worktree -- .github/workflows/
+
+          UNMERGED_PATHS=$(git diff --name-only --diff-filter=U)
+          if [[ -n "$UNMERGED_PATHS" ]]; then
+            echo "::error::Unresolved conflicts remain after excluding upstream workflows."
+            echo "$UNMERGED_PATHS"
+            exit 1
+          fi
+
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit --no-edit
+
+          MERGE_SHA=$(git rev-parse HEAD)
+          TREE_SHA=$(git rev-parse "$MERGE_SHA^{tree}")
+          MERGE_MESSAGE=$(git log -1 --format=%B "$MERGE_SHA")
+
+          if ! git diff --quiet "$BASE_SHA" "$MERGE_SHA" -- .github/workflows/; then
+            echo "::error::Upstream workflow files must not be included in the sync commit."
+            exit 1
+          fi
+
+          STAGING_TAG="automation/sync-upstream-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          STAGING_TAG_CREATED=false
+
+          cleanup() {
+            if [[ "$STAGING_TAG_CREATED" == true ]]; then
+              git push origin ":refs/tags/$STAGING_TAG" >/dev/null 2>&1 || \
+                echo "::warning::Could not remove temporary staging tag: $STAGING_TAG"
+            fi
+          }
+          trap cleanup EXIT
+
+          git push origin "$MERGE_SHA:refs/tags/$STAGING_TAG"
+          STAGING_TAG_CREATED=true
+
+          API_RESPONSE=$(gh api --method POST \
+            "repos/${GITHUB_REPOSITORY}/git/commits" \
+            -f "message=$MERGE_MESSAGE" \
+            -f "tree=$TREE_SHA" \
+            -f "parents[]=$BASE_SHA" \
+            -f "parents[]=$UPSTREAM_SHA")
+
+          SIGNED_SHA=$(jq -r '.sha // empty' <<< "$API_RESPONSE")
+
+          if ! jq -e \
+            --arg tree "$TREE_SHA" \
+            --arg base "$BASE_SHA" \
+            --arg upstream "$UPSTREAM_SHA" \
+            '
+              .verification.verified == true and
+              .verification.reason == "valid" and
+              .tree.sha == $tree and
+              (.parents | length) == 2 and
+              .parents[0].sha == $base and
+              .parents[1].sha == $upstream and
+              .author.name == "github-actions[bot]" and
+              .author.email == "41898282+github-actions[bot]@users.noreply.github.com" and
+              .committer.name == "GitHub" and
+              .committer.email == "noreply@github.com"
+            ' <<< "$API_RESPONSE" >/dev/null; then
+            jq '{sha, author, committer, verification, tree, parents}' <<< "$API_RESPONSE"
+            echo "::error::GitHub did not create a verified merge commit with the expected bot identity."
+            exit 1
+          fi
+
+          echo "Verified merge commit: $SIGNED_SHA"
+
+          git fetch --no-tags origin main
+          CURRENT_MAIN_SHA=$(git rev-parse refs/remotes/origin/main)
+
+          if [[ "$CURRENT_MAIN_SHA" != "$BASE_SHA" ]]; then
+            echo "::error::main changed during synchronization. Refusing to update it."
+            exit 1
+          fi
+
+          REF_RESPONSE=$(gh api --method PATCH \
+            "repos/${GITHUB_REPOSITORY}/git/refs/heads/main" \
+            -f "sha=$SIGNED_SHA" \
+            -F "force=false")
+
+          PUBLISHED_SHA=$(jq -r '.object.sha // empty' <<< "$REF_RESPONSE")
+
+          if [[ "$PUBLISHED_SHA" != "$SIGNED_SHA" ]]; then
+            echo "::error::GitHub did not update main to the verified merge commit."
+            exit 1
+          fi
+
+          FINAL_VERIFICATION=$(gh api \
+            "repos/${GITHUB_REPOSITORY}/git/commits/$SIGNED_SHA" \
+            --jq '.verification')
+
+          echo "Published commit: $PUBLISHED_SHA"
+          echo "Verification: $FINAL_VERIFICATION"
